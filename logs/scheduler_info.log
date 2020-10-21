@@ -27823,3 +27823,137 @@ case2 UpdateRunningDaysJob at 2020-10-21 14:04:36
 case2 HelloWorldJob at 2020-10-21 14:04:38.008
 2020-10-21 14:04:39,008 INFO  [HJZ quartzScheduler_Worker-7] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
 case2 UpdateRunningDaysJob at 2020-10-21 14:04:39
+2020-10-21 14:04:40,007 INFO  [HJZ quartzScheduler_Worker-8] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 14:04:40.007
+2020-10-21 14:04:42,006 INFO  [HJZ quartzScheduler_Worker-9] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 14:04:42.006
+2020-10-21 14:04:42,015 INFO  [HJZ quartzScheduler_Worker-10] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
+case2 UpdateRunningDaysJob at 2020-10-21 14:04:42
+2020-10-21 14:04:44,008 INFO  [HJZ quartzScheduler_Worker-1] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 14:04:44.008
+2020-10-21 14:04:45,007 INFO  [HJZ quartzScheduler_Worker-2] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
+case2 UpdateRunningDaysJob at 2020-10-21 14:04:45
+2020-10-21 14:04:46,005 INFO  [HJZ quartzScheduler_Worker-3] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 14:04:46.005
+2020-10-21 14:04:48,008 INFO  [HJZ quartzScheduler_Worker-4] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 14:04:48.008
+2020-10-21 14:04:48,012 INFO  [HJZ quartzScheduler_Worker-2] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
+case1 UpdateRunningDaysJob at 2020-10-21 14:04:48
+2020-10-21 14:04:50,008 INFO  [HJZ quartzScheduler_Worker-5] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 14:04:50.008
+2020-10-21 14:04:51,006 INFO  [HJZ quartzScheduler_Worker-3] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
+case1 UpdateRunningDaysJob at 2020-10-21 14:04:51
+2020-10-21 14:04:52,006 INFO  [HJZ quartzScheduler_Worker-6] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 14:04:52.006
+2020-10-21 14:04:54,007 INFO  [HJZ quartzScheduler_Worker-4] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
+case1 UpdateRunningDaysJob at 2020-10-21 14:04:54
+2020-10-21 14:04:54,012 INFO  [HJZ quartzScheduler_Worker-7] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 14:04:54.012
+2020-10-21 14:04:56,008 INFO  [HJZ quartzScheduler_Worker-8] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 14:04:56.008
+2020-10-21 14:04:57,014 INFO  [HJZ quartzScheduler_Worker-5] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
+case1 UpdateRunningDaysJob at 2020-10-21 14:04:57
+2020-10-21 14:04:58,008 INFO  [HJZ quartzScheduler_Worker-9] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 14:04:58.008
+2020-10-21 14:05:02,010 INFO  [HJZ quartzScheduler_Worker-10] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 14:05:02.010
+2020-10-21 14:05:03,009 INFO  [HJZ quartzScheduler_Worker-6] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
+case1 UpdateRunningDaysJob at 2020-10-21 14:05:03
+2020-10-21 14:05:04,006 INFO  [HJZ quartzScheduler_Worker-1] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 14:05:04.006
+2020-10-21 14:05:06,007 INFO  [HJZ quartzScheduler_Worker-7] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
+case1 UpdateRunningDaysJob at 2020-10-21 14:05:06
+2020-10-21 14:05:06,010 INFO  [HJZ quartzScheduler_Worker-2] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 14:05:06.010
+2020-10-21 14:05:08,007 INFO  [HJZ quartzScheduler_Worker-3] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 14:05:08.007
+2020-10-21 14:05:09,066 INFO  [HJZ quartzScheduler_Worker-8] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
+case1 UpdateRunningDaysJob at 2020-10-21 14:05:09
+2020-10-21 14:05:10,009 INFO  [HJZ quartzScheduler_Worker-4] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 14:05:10.009
+2020-10-21 14:05:12,009 INFO  [HJZ quartzScheduler_Worker-5] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 14:05:12.009
+2020-10-21 14:05:12,013 INFO  [HJZ quartzScheduler_Worker-9] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
+case1 UpdateRunningDaysJob at 2020-10-21 14:05:12
+2020-10-21 14:05:14,006 INFO  [HJZ quartzScheduler_Worker-6] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 14:05:14.006
+2020-10-21 14:05:15,007 INFO  [HJZ quartzScheduler_Worker-7] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
+case2 UpdateRunningDaysJob at 2020-10-21 14:05:15
+2020-10-21 14:05:16,005 INFO  [HJZ quartzScheduler_Worker-8] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 14:05:16.005
+2020-10-21 14:05:18,007 INFO  [HJZ quartzScheduler_Worker-9] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 14:05:18.007
+2020-10-21 14:05:18,016 INFO  [HJZ quartzScheduler_Worker-10] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
+case2 UpdateRunningDaysJob at 2020-10-21 14:05:18
+2020-10-21 14:05:20,009 INFO  [HJZ quartzScheduler_Worker-1] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 14:05:20.009
+2020-10-21 14:05:21,006 INFO  [HJZ quartzScheduler_Worker-2] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
+case2 UpdateRunningDaysJob at 2020-10-21 14:05:21
+2020-10-21 14:05:22,007 INFO  [HJZ quartzScheduler_Worker-3] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 14:05:22.007
+2020-10-21 14:05:24,009 INFO  [HJZ quartzScheduler_Worker-4] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 14:05:24.009
+2020-10-21 14:05:24,018 INFO  [HJZ quartzScheduler_Worker-5] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
+case2 UpdateRunningDaysJob at 2020-10-21 14:05:24
+2020-10-21 14:05:26,010 INFO  [HJZ quartzScheduler_Worker-6] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 14:05:26.010
+2020-10-21 14:05:27,007 INFO  [HJZ quartzScheduler_Worker-7] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
+case2 UpdateRunningDaysJob at 2020-10-21 14:05:27
+2020-10-21 14:05:28,007 INFO  [HJZ quartzScheduler_Worker-8] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 14:05:28.007
+2020-10-21 14:05:30,008 INFO  [HJZ quartzScheduler_Worker-9] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 14:05:30.008
+2020-10-21 14:05:30,017 INFO  [HJZ quartzScheduler_Worker-10] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
+case2 UpdateRunningDaysJob at 2020-10-21 14:05:30
+2020-10-21 14:05:32,008 INFO  [HJZ quartzScheduler_Worker-1] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 14:05:32.008
+2020-10-21 14:05:33,008 INFO  [HJZ quartzScheduler_Worker-2] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
+case2 UpdateRunningDaysJob at 2020-10-21 14:05:33
+2020-10-21 14:05:34,008 INFO  [HJZ quartzScheduler_Worker-3] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 14:05:34.008
+2020-10-21 14:05:36,009 INFO  [HJZ quartzScheduler_Worker-4] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 14:05:36.009
+2020-10-21 14:05:36,018 INFO  [HJZ quartzScheduler_Worker-5] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
+case2 UpdateRunningDaysJob at 2020-10-21 14:05:36
+2020-10-21 14:05:38,008 INFO  [HJZ quartzScheduler_Worker-6] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 14:05:38.008
+2020-10-21 14:05:39,006 INFO  [HJZ quartzScheduler_Worker-7] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
+case2 UpdateRunningDaysJob at 2020-10-21 14:05:39
+2020-10-21 14:05:40,007 INFO  [HJZ quartzScheduler_Worker-10] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case1 HelloWorldJob at 2020-10-21 14:05:40.007
+2020-10-21 14:05:42,006 INFO  [HJZ quartzScheduler_Worker-8] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
+case2 UpdateRunningDaysJob at 2020-10-21 14:05:42
+2020-10-21 14:05:42,011 INFO  [HJZ quartzScheduler_Worker-1] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case1 HelloWorldJob at 2020-10-21 14:05:42.011
+2020-10-21 14:05:42,492 INFO  [HJZ SpringContextShutdownHook] Caller+0	 at org.quartz.core.QuartzScheduler.standby(QuartzScheduler.java:585)
+Scheduler quartzScheduler_$_HJZ1603243485404 paused.
+2020-10-21 14:05:42,819 INFO  [HJZ SpringContextShutdownHook] Caller+0	 at org.quartz.core.QuartzScheduler.standby(QuartzScheduler.java:585)
+Scheduler quartzScheduler_$_HJZ1603243603186 paused.
+2020-10-21 14:05:43,075 INFO  [HJZ SpringContextShutdownHook] Caller+0	 at org.springframework.scheduling.quartz.SchedulerFactoryBean.destroy(SchedulerFactoryBean.java:845)
+Shutting down Quartz Scheduler
+2020-10-21 14:05:43,076 INFO  [HJZ SpringContextShutdownHook] Caller+0	 at org.quartz.core.QuartzScheduler.shutdown(QuartzScheduler.java:666)
+Scheduler quartzScheduler_$_HJZ1603243485404 shutting down.
+2020-10-21 14:05:43,076 INFO  [HJZ SpringContextShutdownHook] Caller+0	 at org.quartz.core.QuartzScheduler.standby(QuartzScheduler.java:585)
+Scheduler quartzScheduler_$_HJZ1603243485404 paused.
+2020-10-21 14:05:43,079 INFO  [HJZ SpringContextShutdownHook] Caller+0	 at org.quartz.core.QuartzScheduler.shutdown(QuartzScheduler.java:740)
+Scheduler quartzScheduler_$_HJZ1603243485404 shutdown complete.
+2020-10-21 14:05:43,080 INFO  [HJZ SpringContextShutdownHook] Caller+0	 at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy(AbstractEntityManagerFactoryBean.java:598)
+Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-21 14:05:43,100 INFO  [HJZ SpringContextShutdownHook] Caller+0	 at org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218)
+Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-21 14:05:43,130 INFO  [HJZ SpringContextShutdownHook] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1825)
+{dataSource-1} closed
+2020-10-21 14:05:43,274 INFO  [HJZ SpringContextShutdownHook] Caller+0	 at org.springframework.scheduling.quartz.SchedulerFactoryBean.destroy(SchedulerFactoryBean.java:845)
+Shutting down Quartz Scheduler
+2020-10-21 14:05:43,274 INFO  [HJZ SpringContextShutdownHook] Caller+0	 at org.quartz.core.QuartzScheduler.shutdown(QuartzScheduler.java:666)
+Scheduler quartzScheduler_$_HJZ1603243603186 shutting down.
+2020-10-21 14:05:43,275 INFO  [HJZ SpringContextShutdownHook] Caller+0	 at org.quartz.core.QuartzScheduler.standby(QuartzScheduler.java:585)
+Scheduler quartzScheduler_$_HJZ1603243603186 paused.
+2020-10-21 14:05:43,276 INFO  [HJZ SpringContextShutdownHook] Caller+0	 at org.quartz.core.QuartzScheduler.shutdown(QuartzScheduler.java:740)
+Scheduler quartzScheduler_$_HJZ1603243603186 shutdown complete.
+2020-10-21 14:05:43,277 INFO  [HJZ SpringContextShutdownHook] Caller+0	 at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy(AbstractEntityManagerFactoryBean.java:598)
+Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-21 14:05:43,289 INFO  [HJZ SpringContextShutdownHook] Caller+0	 at org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218)
+Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-21 14:05:43,304 INFO  [HJZ SpringContextShutdownHook] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1825)
+{dataSource-1} closed
