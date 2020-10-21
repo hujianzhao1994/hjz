@@ -16,6 +16,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Job1SchedulerApplication {
     public static void main(String[] args) {
         SpringApplication.run(Job1SchedulerApplication.class, args);
-        log.info("DistSchedulerApplication Start done.");
+        log.info("Job1SchedulerApplication Start done.");
     }
 }
