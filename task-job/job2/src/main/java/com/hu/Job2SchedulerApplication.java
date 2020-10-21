@@ -13,9 +13,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @SpringBootApplication
 @Slf4j
-public class DistSchedulerApplication {
+public class Job2SchedulerApplication {
     public static void main(String[] args) {
-        SpringApplication.run(DistSchedulerApplication.class, args);
+        SpringApplication.run(Job2SchedulerApplication.class, args);
         log.info("DistSchedulerApplication Start done.");
     }
 }

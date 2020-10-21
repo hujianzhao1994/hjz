@@ -1,47 +1,55 @@
-2020-10-20 16:55:22,389 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55)
-Starting DistSchedulerApplication on HJZ with PID 312 (D:\work_soft\IDEA_Tool\IntelliJ_IDEA\git_repositor\hjz\task-job\job1\target\classes started by Administrator in D:\work_soft\IDEA_Tool\IntelliJ_IDEA\git_repositor\hjz)
-2020-10-20 16:55:22,396 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:655)
+2020-10-21 09:18:16,301 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55)
+Starting DistSchedulerApplication on HJZ with PID 28952 (D:\work_soft\IDEA_Tool\IntelliJ_IDEA\git_repositor\hjz\task-job\job2\target\classes started by Administrator in D:\work_soft\IDEA_Tool\IntelliJ_IDEA\git_repositor\hjz)
+2020-10-21 09:18:16,383 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:655)
 The following profiles are active: dev
-2020-10-20 16:55:22,463 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:225)
+2020-10-21 09:18:16,493 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:225)
 Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-10-20 16:55:22,469 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:225)
+2020-10-21 09:18:16,496 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:225)
 For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-10-20 16:55:23,576 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:127)
+2020-10-21 09:18:17,835 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:127)
 Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-10-20 16:55:23,626 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:187)
-Finished Spring Data repository scanning in 35ms. Found 0 JPA repository interfaces.
-2020-10-20 16:55:24,893 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:108)
-Tomcat initialized with port(s): 9095 (http)
-2020-10-20 16:55:24,908 INFO  [HJZ restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+2020-10-21 09:18:17,880 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:187)
+Finished Spring Data repository scanning in 31ms. Found 0 JPA repository interfaces.
+2020-10-21 09:18:18,696 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:108)
+Tomcat initialized with port(s): 9091 (http)
+2020-10-21 09:18:18,709 INFO  [HJZ restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
 Starting service [Tomcat]
-2020-10-20 16:55:24,909 INFO  [HJZ restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+2020-10-21 09:18:18,709 INFO  [HJZ restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
 Starting Servlet engine: [Apache Tomcat/9.0.38]
-2020-10-20 16:55:25,059 INFO  [HJZ restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+2020-10-21 09:18:18,889 INFO  [HJZ restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
 Initializing Spring embedded WebApplicationContext
-2020-10-20 16:55:25,059 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:285)
-Root WebApplicationContext: initialization completed in 2590 ms
-2020-10-20 16:55:25,396 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:181)
+2020-10-21 09:18:18,889 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:285)
+Root WebApplicationContext: initialization completed in 2390 ms
+2020-10-21 09:18:19,235 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:181)
 Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-20 16:55:25,634 INFO  [HJZ restartedMain] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930)
+2020-10-21 09:18:19,527 INFO  [HJZ restartedMain] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930)
 {dataSource-1} inited
-2020-10-20 16:55:25,754 INFO  [HJZ task-1] Caller+0	 at org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation(LogHelper.java:31)
+2020-10-21 09:18:19,584 INFO  [HJZ task-1] Caller+0	 at org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation(LogHelper.java:31)
 HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-10-20 16:55:25,833 INFO  [HJZ task-1] Caller+0	 at org.hibernate.Version.logVersion(Version.java:44)
+2020-10-21 09:18:19,666 INFO  [HJZ task-1] Caller+0	 at org.hibernate.Version.logVersion(Version.java:44)
 HHH000412: Hibernate ORM core version 5.4.21.Final
-2020-10-20 16:55:25,859 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1208)
+2020-10-21 09:18:19,887 INFO  [HJZ task-1] Caller+0	 at org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:49)
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-10-21 09:18:19,897 WARN  [HJZ restartedMain] Caller+0	 at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor(JpaBaseConfiguration.java:220)
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-21 09:18:20,075 INFO  [HJZ task-1] Caller+0	 at org.hibernate.dialect.Dialect.<init>(Dialect.java:170)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-10-21 09:18:20,082 INFO  [HJZ restartedMain] Caller+0	 at springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69)
+Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-21 09:18:20,211 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1208)
 Using default implementation for ThreadExecutor
-2020-10-20 16:55:25,862 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.simpl.SimpleThreadPool.initialize(SimpleThreadPool.java:268)
+2020-10-21 09:18:20,215 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.simpl.SimpleThreadPool.initialize(SimpleThreadPool.java:268)
 Job execution threads will use class loader of thread: restartedMain
-2020-10-20 16:55:25,874 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.SchedulerSignalerImpl.<init>(SchedulerSignalerImpl.java:61)
+2020-10-21 09:18:20,226 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.SchedulerSignalerImpl.<init>(SchedulerSignalerImpl.java:61)
 Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-2020-10-20 16:55:25,875 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.QuartzScheduler.<init>(QuartzScheduler.java:229)
+2020-10-21 09:18:20,227 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.QuartzScheduler.<init>(QuartzScheduler.java:229)
 Quartz Scheduler v.2.3.0 created.
-2020-10-20 16:55:25,882 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.jdbcjobstore.JobStoreSupport.initialize(JobStoreSupport.java:672)
+2020-10-21 09:18:20,232 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.jdbcjobstore.JobStoreSupport.initialize(JobStoreSupport.java:672)
 Using db table-based data access locking (synchronization).
-2020-10-20 16:55:25,886 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.jdbcjobstore.JobStoreCMT.initialize(JobStoreCMT.java:145)
+2020-10-21 09:18:20,236 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.jdbcjobstore.JobStoreCMT.initialize(JobStoreCMT.java:145)
 JobStoreCMT initialized.
-2020-10-20 16:55:25,890 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.QuartzScheduler.initialize(QuartzScheduler.java:294)
-Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'HJZ1603184125861'
+2020-10-21 09:18:20,237 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.QuartzScheduler.initialize(QuartzScheduler.java:294)
+Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'HJZ1603243100214'
   Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
   NOT STARTED.
   Currently in standby mode.
@@ -49,875 +57,144 @@ Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId
   Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
   Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
 
-2020-10-20 16:55:25,891 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1362)
+2020-10-21 09:18:20,238 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1362)
 Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
-2020-10-20 16:55:25,891 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1366)
+2020-10-21 09:18:20,238 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1366)
 Quartz scheduler version: 2.3.0
-2020-10-20 16:55:25,891 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.QuartzScheduler.setJobFactory(QuartzScheduler.java:2287)
-JobFactory set to: com.hu.config.QuartzSchedulerConfig$AutowiringSpringBeanJobFactory@62dbe676
-2020-10-20 16:55:26,054 WARN  [HJZ restartedMain] Caller+0	 at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor(JpaBaseConfiguration.java:220)
-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-10-20 16:55:26,106 INFO  [HJZ task-1] Caller+0	 at org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:49)
-HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-10-20 16:55:26,322 INFO  [HJZ task-1] Caller+0	 at org.hibernate.dialect.Dialect.<init>(Dialect.java:170)
-HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2020-10-20 16:55:26,594 INFO  [HJZ task-1] Caller+0	 at org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)
+2020-10-21 09:18:20,238 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.QuartzScheduler.setJobFactory(QuartzScheduler.java:2287)
+JobFactory set to: com.hu.config.QuartzSchedulerConfig$AutowiringSpringBeanJobFactory@5ed2648d
+2020-10-21 09:18:20,374 INFO  [HJZ task-1] Caller+0	 at org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)
 HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-10-20 16:55:26,594 WARN  [HJZ restartedMain] Caller+0	 at org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer(OptionalLiveReloadServer.java:61)
+2020-10-21 09:18:20,387 INFO  [HJZ task-1] Caller+0	 at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:416)
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-21 09:18:20,536 WARN  [HJZ restartedMain] Caller+0	 at org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer(OptionalLiveReloadServer.java:61)
 Unable to start LiveReload server
-2020-10-20 16:55:26,609 INFO  [HJZ task-1] Caller+0	 at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:416)
-Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-10-20 16:55:26,633 WARN  [HJZ restartedMain] Caller+0	 at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:559)
-Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 9095 is already in use
-2020-10-20 16:55:26,653 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.scheduling.quartz.SchedulerFactoryBean.destroy(SchedulerFactoryBean.java:845)
-Shutting down Quartz Scheduler
-2020-10-20 16:55:26,654 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.QuartzScheduler.shutdown(QuartzScheduler.java:666)
-Scheduler quartzScheduler_$_HJZ1603184125861 shutting down.
-2020-10-20 16:55:26,654 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.QuartzScheduler.standby(QuartzScheduler.java:585)
-Scheduler quartzScheduler_$_HJZ1603184125861 paused.
-2020-10-20 16:55:26,655 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.QuartzScheduler.shutdown(QuartzScheduler.java:740)
-Scheduler quartzScheduler_$_HJZ1603184125861 shutdown complete.
-2020-10-20 16:55:26,655 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy(AbstractEntityManagerFactoryBean.java:598)
-Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-10-20 16:55:26,660 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218)
-Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-20 16:55:26,667 INFO  [HJZ restartedMain] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1825)
-{dataSource-1} closed
-2020-10-20 16:55:26,669 INFO  [HJZ restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
-Stopping service [Tomcat]
-2020-10-20 16:55:26,682 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener.logMessage(ConditionEvaluationReportLoggingListener.java:136)
-
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2020-10-20 16:55:26,689 ERROR [HJZ restartedMain] Caller+0	 at org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter.report(LoggingFailureAnalysisReporter.java:40)
-
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 9095 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 9095 or configure this application to listen on another port.
-
-2020-10-20 16:55:44,370 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55)
-Starting DistSchedulerApplication on HJZ with PID 27248 (D:\work_soft\IDEA_Tool\IntelliJ_IDEA\git_repositor\hjz\task-job\job1\target\classes started by Administrator in D:\work_soft\IDEA_Tool\IntelliJ_IDEA\git_repositor\hjz)
-2020-10-20 16:55:44,400 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:655)
-The following profiles are active: dev
-2020-10-20 16:55:44,525 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:225)
-Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-10-20 16:55:44,526 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:225)
-For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-10-20 16:55:45,498 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:127)
-Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-10-20 16:55:45,537 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:187)
-Finished Spring Data repository scanning in 27ms. Found 0 JPA repository interfaces.
-2020-10-20 16:55:46,289 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:108)
-Tomcat initialized with port(s): 9095 (http)
-2020-10-20 16:55:46,302 INFO  [HJZ restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
-Starting service [Tomcat]
-2020-10-20 16:55:46,302 INFO  [HJZ restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
-Starting Servlet engine: [Apache Tomcat/9.0.38]
-2020-10-20 16:55:46,458 INFO  [HJZ restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
-Initializing Spring embedded WebApplicationContext
-2020-10-20 16:55:46,458 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:285)
-Root WebApplicationContext: initialization completed in 1931 ms
-2020-10-20 16:55:46,754 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:181)
-Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-20 16:55:46,968 INFO  [HJZ restartedMain] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930)
-{dataSource-1} inited
-2020-10-20 16:55:47,086 INFO  [HJZ task-1] Caller+0	 at org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation(LogHelper.java:31)
-HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-10-20 16:55:47,156 INFO  [HJZ task-1] Caller+0	 at org.hibernate.Version.logVersion(Version.java:44)
-HHH000412: Hibernate ORM core version 5.4.21.Final
-2020-10-20 16:55:47,181 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1208)
-Using default implementation for ThreadExecutor
-2020-10-20 16:55:47,186 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.simpl.SimpleThreadPool.initialize(SimpleThreadPool.java:268)
-Job execution threads will use class loader of thread: restartedMain
-2020-10-20 16:55:47,196 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.SchedulerSignalerImpl.<init>(SchedulerSignalerImpl.java:61)
-Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-2020-10-20 16:55:47,196 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.QuartzScheduler.<init>(QuartzScheduler.java:229)
-Quartz Scheduler v.2.3.0 created.
-2020-10-20 16:55:47,202 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.jdbcjobstore.JobStoreSupport.initialize(JobStoreSupport.java:672)
-Using db table-based data access locking (synchronization).
-2020-10-20 16:55:47,205 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.jdbcjobstore.JobStoreCMT.initialize(JobStoreCMT.java:145)
-JobStoreCMT initialized.
-2020-10-20 16:55:47,206 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.QuartzScheduler.initialize(QuartzScheduler.java:294)
-Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'HJZ1603184147184'
-  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
-  NOT STARTED.
-  Currently in standby mode.
-  Number of jobs executed: 0
-  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
-  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
-
-2020-10-20 16:55:47,208 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1362)
-Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
-2020-10-20 16:55:47,208 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1366)
-Quartz scheduler version: 2.3.0
-2020-10-20 16:55:47,209 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.QuartzScheduler.setJobFactory(QuartzScheduler.java:2287)
-JobFactory set to: com.hu.config.QuartzSchedulerConfig$AutowiringSpringBeanJobFactory@3a887330
-2020-10-20 16:55:47,350 WARN  [HJZ restartedMain] Caller+0	 at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor(JpaBaseConfiguration.java:220)
-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-10-20 16:55:47,399 INFO  [HJZ task-1] Caller+0	 at org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:49)
-HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-10-20 16:55:47,629 INFO  [HJZ task-1] Caller+0	 at org.hibernate.dialect.Dialect.<init>(Dialect.java:170)
-HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2020-10-20 16:55:47,882 INFO  [HJZ task-1] Caller+0	 at org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)
-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-10-20 16:55:47,884 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer(OptionalLiveReloadServer.java:58)
-LiveReload server is running on port 35729
-2020-10-20 16:55:47,897 INFO  [HJZ task-1] Caller+0	 at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:416)
-Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-10-20 16:55:47,938 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:220)
-Tomcat started on port(s): 9095 (http) with context path ''
-2020-10-20 16:55:47,942 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.scheduling.quartz.SchedulerFactoryBean.startScheduler(SchedulerFactoryBean.java:727)
+2020-10-21 09:18:20,799 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:220)
+Tomcat started on port(s): 9091 (http) with context path ''
+2020-10-21 09:18:20,800 INFO  [HJZ restartedMain] Caller+0	 at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160)
+Context refreshed
+2020-10-21 09:18:20,825 INFO  [HJZ restartedMain] Caller+0	 at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163)
+Found 1 custom documentation plugin(s)
+2020-10-21 09:18:20,880 INFO  [HJZ restartedMain] Caller+0	 at springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41)
+Scanning for api listing references
+2020-10-21 09:18:20,905 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.scheduling.quartz.SchedulerFactoryBean.startScheduler(SchedulerFactoryBean.java:727)
 Starting Quartz Scheduler now
-2020-10-20 16:55:47,947 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.jdbcjobstore.JobStoreSupport.logWarnIfNonZero(JobStoreSupport.java:3629)
-ClusterManager: detected 2 failed or restarted instances.
-2020-10-20 16:55:47,948 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.jdbcjobstore.JobStoreSupport.clusterRecover(JobStoreSupport.java:3488)
-ClusterManager: Scanning for instance "HJZ1603180957065"'s failed in-progress jobs.
-2020-10-20 16:55:47,949 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.jdbcjobstore.JobStoreSupport.clusterRecover(JobStoreSupport.java:3488)
-ClusterManager: Scanning for instance "HJZ1603184087495"'s failed in-progress jobs.
-2020-10-20 16:55:47,953 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.QuartzScheduler.start(QuartzScheduler.java:547)
-Scheduler quartzScheduler_$_HJZ1603184147184 started.
-2020-10-20 16:55:47,954 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:49)
-Triggering deferred initialization of Spring Data repositories…
-2020-10-20 16:55:47,954 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:53)
-Spring Data repositories initialized!
-2020-10-20 16:55:47,966 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61)
-Started DistSchedulerApplication in 4.468 seconds (JVM running for 6.443)
-2020-10-20 16:55:47,970 INFO  [HJZ restartedMain] Caller+0	 at com.hu.DistSchedulerApplication.main(DistSchedulerApplication.java:19)
-DistSchedulerApplication Start done.
-2020-10-20 16:55:48,021 INFO  [HJZ quartzScheduler_Worker-1] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:55:48.021
-2020-10-20 16:55:48,034 INFO  [HJZ quartzScheduler_Worker-2] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 16:55:48
-2020-10-20 16:55:50,015 INFO  [HJZ quartzScheduler_Worker-3] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:55:50.015
-2020-10-20 16:55:51,012 INFO  [HJZ quartzScheduler_Worker-4] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 16:55:51
-2020-10-20 16:55:52,016 INFO  [HJZ quartzScheduler_Worker-5] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:55:52.016
-2020-10-20 16:55:54,018 INFO  [HJZ quartzScheduler_Worker-6] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:55:54.018
-2020-10-20 16:55:54,042 INFO  [HJZ quartzScheduler_Worker-7] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 16:55:54
-2020-10-20 16:55:56,012 INFO  [HJZ quartzScheduler_Worker-8] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:55:56.012
-2020-10-20 16:55:57,012 INFO  [HJZ quartzScheduler_Worker-9] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 16:55:57
-2020-10-20 16:55:58,011 INFO  [HJZ quartzScheduler_Worker-10] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:55:58.011
-2020-10-20 16:56:02,011 INFO  [HJZ quartzScheduler_Worker-1] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:56:02.011
-2020-10-20 16:56:03,009 INFO  [HJZ quartzScheduler_Worker-2] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 16:56:03
-2020-10-20 16:56:04,009 INFO  [HJZ quartzScheduler_Worker-3] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:56:04.009
-2020-10-20 16:56:06,012 INFO  [HJZ quartzScheduler_Worker-4] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:56:06.012
-2020-10-20 16:56:06,024 INFO  [HJZ quartzScheduler_Worker-5] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 16:56:06
-2020-10-20 16:56:06,519 INFO  [HJZ SpringContextShutdownHook] Caller+0	 at org.quartz.core.QuartzScheduler.standby(QuartzScheduler.java:585)
-Scheduler quartzScheduler_$_HJZ1603184147184 paused.
-2020-10-20 16:56:07,087 INFO  [HJZ SpringContextShutdownHook] Caller+0	 at org.springframework.scheduling.quartz.SchedulerFactoryBean.destroy(SchedulerFactoryBean.java:845)
-Shutting down Quartz Scheduler
-2020-10-20 16:56:07,087 INFO  [HJZ SpringContextShutdownHook] Caller+0	 at org.quartz.core.QuartzScheduler.shutdown(QuartzScheduler.java:666)
-Scheduler quartzScheduler_$_HJZ1603184147184 shutting down.
-2020-10-20 16:56:07,087 INFO  [HJZ SpringContextShutdownHook] Caller+0	 at org.quartz.core.QuartzScheduler.standby(QuartzScheduler.java:585)
-Scheduler quartzScheduler_$_HJZ1603184147184 paused.
-2020-10-20 16:56:07,088 INFO  [HJZ SpringContextShutdownHook] Caller+0	 at org.quartz.core.QuartzScheduler.shutdown(QuartzScheduler.java:740)
-Scheduler quartzScheduler_$_HJZ1603184147184 shutdown complete.
-2020-10-20 16:56:07,089 INFO  [HJZ SpringContextShutdownHook] Caller+0	 at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy(AbstractEntityManagerFactoryBean.java:598)
-Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-10-20 16:56:07,091 INFO  [HJZ SpringContextShutdownHook] Caller+0	 at org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218)
-Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-20 16:56:07,102 INFO  [HJZ SpringContextShutdownHook] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1825)
-{dataSource-1} closed
-2020-10-20 16:57:41,820 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55)
-Starting DistSchedulerApplication on HJZ with PID 26884 (D:\work_soft\IDEA_Tool\IntelliJ_IDEA\git_repositor\hjz\task-job\job1\target\classes started by Administrator in D:\work_soft\IDEA_Tool\IntelliJ_IDEA\git_repositor\hjz)
-2020-10-20 16:57:41,824 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:655)
-The following profiles are active: dev
-2020-10-20 16:57:41,918 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:225)
-Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-10-20 16:57:41,918 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:225)
-For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-10-20 16:57:43,206 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:127)
-Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-10-20 16:57:43,243 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:187)
-Finished Spring Data repository scanning in 25ms. Found 0 JPA repository interfaces.
-2020-10-20 16:57:44,016 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:108)
-Tomcat initialized with port(s): 9095 (http)
-2020-10-20 16:57:44,029 INFO  [HJZ restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
-Starting service [Tomcat]
-2020-10-20 16:57:44,031 INFO  [HJZ restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
-Starting Servlet engine: [Apache Tomcat/9.0.38]
-2020-10-20 16:57:44,191 INFO  [HJZ restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
-Initializing Spring embedded WebApplicationContext
-2020-10-20 16:57:44,191 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:285)
-Root WebApplicationContext: initialization completed in 2272 ms
-2020-10-20 16:57:44,481 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:181)
-Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-20 16:57:44,695 INFO  [HJZ restartedMain] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930)
-{dataSource-1} inited
-2020-10-20 16:57:44,812 INFO  [HJZ task-1] Caller+0	 at org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation(LogHelper.java:31)
-HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-10-20 16:57:44,889 INFO  [HJZ task-1] Caller+0	 at org.hibernate.Version.logVersion(Version.java:44)
-HHH000412: Hibernate ORM core version 5.4.21.Final
-2020-10-20 16:57:44,911 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1208)
-Using default implementation for ThreadExecutor
-2020-10-20 16:57:44,914 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.simpl.SimpleThreadPool.initialize(SimpleThreadPool.java:268)
-Job execution threads will use class loader of thread: restartedMain
-2020-10-20 16:57:44,926 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.SchedulerSignalerImpl.<init>(SchedulerSignalerImpl.java:61)
-Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-2020-10-20 16:57:44,926 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.QuartzScheduler.<init>(QuartzScheduler.java:229)
-Quartz Scheduler v.2.3.0 created.
-2020-10-20 16:57:44,932 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.jdbcjobstore.JobStoreSupport.initialize(JobStoreSupport.java:672)
-Using db table-based data access locking (synchronization).
-2020-10-20 16:57:44,935 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.jdbcjobstore.JobStoreCMT.initialize(JobStoreCMT.java:145)
-JobStoreCMT initialized.
-2020-10-20 16:57:44,940 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.QuartzScheduler.initialize(QuartzScheduler.java:294)
-Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'HJZ1603184264913'
-  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
-  NOT STARTED.
-  Currently in standby mode.
-  Number of jobs executed: 0
-  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
-  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
-
-2020-10-20 16:57:44,940 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1362)
-Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
-2020-10-20 16:57:44,941 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1366)
-Quartz scheduler version: 2.3.0
-2020-10-20 16:57:44,941 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.QuartzScheduler.setJobFactory(QuartzScheduler.java:2287)
-JobFactory set to: com.hu.config.QuartzSchedulerConfig$AutowiringSpringBeanJobFactory@2a2b97d9
-2020-10-20 16:57:45,144 WARN  [HJZ restartedMain] Caller+0	 at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor(JpaBaseConfiguration.java:220)
-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-10-20 16:57:45,227 INFO  [HJZ task-1] Caller+0	 at org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:49)
-HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-10-20 16:57:45,458 INFO  [HJZ task-1] Caller+0	 at org.hibernate.dialect.Dialect.<init>(Dialect.java:170)
-HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2020-10-20 16:57:45,718 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer(OptionalLiveReloadServer.java:58)
-LiveReload server is running on port 35729
-2020-10-20 16:57:45,737 INFO  [HJZ task-1] Caller+0	 at org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)
-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-10-20 16:57:45,752 INFO  [HJZ task-1] Caller+0	 at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:416)
-Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-10-20 16:57:45,775 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:220)
-Tomcat started on port(s): 9095 (http) with context path ''
-2020-10-20 16:57:45,776 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.scheduling.quartz.SchedulerFactoryBean.startScheduler(SchedulerFactoryBean.java:727)
-Starting Quartz Scheduler now
-2020-10-20 16:57:45,783 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.jdbcjobstore.JobStoreSupport.logWarnIfNonZero(JobStoreSupport.java:3629)
+2020-10-21 09:18:20,911 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.jdbcjobstore.JobStoreSupport.logWarnIfNonZero(JobStoreSupport.java:3629)
 ClusterManager: detected 1 failed or restarted instances.
-2020-10-20 16:57:45,783 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.jdbcjobstore.JobStoreSupport.clusterRecover(JobStoreSupport.java:3488)
-ClusterManager: Scanning for instance "HJZ1603184147184"'s failed in-progress jobs.
-2020-10-20 16:57:45,788 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.QuartzScheduler.start(QuartzScheduler.java:547)
-Scheduler quartzScheduler_$_HJZ1603184264913 started.
-2020-10-20 16:57:45,789 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:49)
+2020-10-21 09:18:20,911 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.jdbcjobstore.JobStoreSupport.clusterRecover(JobStoreSupport.java:3488)
+ClusterManager: Scanning for instance "HJZ1603184597733"'s failed in-progress jobs.
+2020-10-21 09:18:20,916 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.QuartzScheduler.start(QuartzScheduler.java:547)
+Scheduler quartzScheduler_$_HJZ1603243100214 started.
+2020-10-21 09:18:20,917 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:49)
 Triggering deferred initialization of Spring Data repositories…
-2020-10-20 16:57:45,790 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:53)
+2020-10-21 09:18:20,919 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:53)
 Spring Data repositories initialized!
-2020-10-20 16:57:45,807 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61)
-Started DistSchedulerApplication in 4.755 seconds (JVM running for 6.614)
-2020-10-20 16:57:45,815 INFO  [HJZ restartedMain] Caller+0	 at com.hu.DistSchedulerApplication.main(DistSchedulerApplication.java:19)
+2020-10-21 09:18:20,931 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61)
+Started DistSchedulerApplication in 5.809 seconds (JVM running for 8.297)
+2020-10-21 09:18:20,937 INFO  [HJZ restartedMain] Caller+0	 at com.hu.DistSchedulerApplication.main(DistSchedulerApplication.java:19)
 DistSchedulerApplication Start done.
-2020-10-20 16:57:45,829 INFO  [HJZ quartzScheduler_Worker-1] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:57:45.828
-2020-10-20 16:57:45,837 INFO  [HJZ quartzScheduler_Worker-2] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 16:57:45
-2020-10-20 16:57:46,010 INFO  [HJZ quartzScheduler_Worker-3] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:57:46.010
-2020-10-20 16:57:48,014 INFO  [HJZ quartzScheduler_Worker-4] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:57:48.014
-2020-10-20 16:57:48,034 INFO  [HJZ quartzScheduler_Worker-5] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 16:57:48
-2020-10-20 16:57:50,011 INFO  [HJZ quartzScheduler_Worker-6] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:57:50.011
-2020-10-20 16:57:51,014 INFO  [HJZ quartzScheduler_Worker-7] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 16:57:51
-2020-10-20 16:57:52,010 INFO  [HJZ quartzScheduler_Worker-8] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:57:52.010
-2020-10-20 16:57:54,024 INFO  [HJZ quartzScheduler_Worker-9] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:57:54.024
-2020-10-20 16:57:54,049 INFO  [HJZ quartzScheduler_Worker-10] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 16:57:54
-2020-10-20 16:57:56,072 INFO  [HJZ quartzScheduler_Worker-1] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:57:56.072
-2020-10-20 16:57:57,080 INFO  [HJZ quartzScheduler_Worker-2] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 16:57:57
-2020-10-20 16:57:58,009 INFO  [HJZ quartzScheduler_Worker-3] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:57:58.009
-2020-10-20 16:58:02,010 INFO  [HJZ quartzScheduler_Worker-4] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:58:02.010
-2020-10-20 16:58:03,008 INFO  [HJZ quartzScheduler_Worker-5] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 16:58:03
-2020-10-20 16:58:04,009 INFO  [HJZ quartzScheduler_Worker-6] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:58:04.009
-2020-10-20 16:58:06,070 INFO  [HJZ quartzScheduler_Worker-7] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:58:06.070
-2020-10-20 16:58:06,087 INFO  [HJZ quartzScheduler_Worker-8] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 16:58:06
-2020-10-20 16:58:08,025 INFO  [HJZ quartzScheduler_Worker-9] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:58:08.025
-2020-10-20 16:58:09,011 INFO  [HJZ quartzScheduler_Worker-10] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 16:58:09
-2020-10-20 16:58:10,008 INFO  [HJZ quartzScheduler_Worker-1] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:58:10.008
-2020-10-20 16:58:12,009 INFO  [HJZ quartzScheduler_Worker-2] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:58:12.009
-2020-10-20 16:58:12,022 INFO  [HJZ quartzScheduler_Worker-3] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 16:58:12
-2020-10-20 16:58:14,009 INFO  [HJZ quartzScheduler_Worker-4] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:58:14.009
-2020-10-20 16:58:15,009 INFO  [HJZ quartzScheduler_Worker-5] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 16:58:15
-2020-10-20 16:58:16,007 INFO  [HJZ quartzScheduler_Worker-6] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:58:16.007
-2020-10-20 16:58:18,019 INFO  [HJZ quartzScheduler_Worker-7] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:58:18.019
-2020-10-20 16:58:18,031 INFO  [HJZ quartzScheduler_Worker-8] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 16:58:18
-2020-10-20 16:58:20,009 INFO  [HJZ quartzScheduler_Worker-9] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:58:20.009
-2020-10-20 16:58:21,008 INFO  [HJZ quartzScheduler_Worker-10] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 16:58:21
-2020-10-20 16:58:22,007 INFO  [HJZ quartzScheduler_Worker-1] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:58:22.007
-2020-10-20 16:58:24,008 INFO  [HJZ quartzScheduler_Worker-2] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:58:24.008
-2020-10-20 16:58:24,020 INFO  [HJZ quartzScheduler_Worker-3] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 16:58:24
-2020-10-20 16:58:26,007 INFO  [HJZ quartzScheduler_Worker-4] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:58:26.007
-2020-10-20 16:58:27,019 INFO  [HJZ quartzScheduler_Worker-5] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 16:58:27
-2020-10-20 16:58:28,040 INFO  [HJZ quartzScheduler_Worker-6] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:58:28.040
-2020-10-20 16:58:30,071 INFO  [HJZ quartzScheduler_Worker-7] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:58:30.071
-2020-10-20 16:58:30,087 INFO  [HJZ quartzScheduler_Worker-8] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 16:58:30
-2020-10-20 16:58:32,917 INFO  [HJZ quartzScheduler_Worker-9] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:58:32.917
-2020-10-20 16:58:38,357 INFO  [HJZ quartzScheduler_Worker-10] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 16:58:38
-2020-10-20 16:58:38,429 INFO  [HJZ quartzScheduler_Worker-1] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:58:38.429
-2020-10-20 16:58:38,502 INFO  [HJZ quartzScheduler_Worker-2] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:58:38.502
-2020-10-20 16:58:38,546 INFO  [HJZ quartzScheduler_Worker-3] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 16:58:38
-2020-10-20 16:58:38,559 INFO  [HJZ quartzScheduler_Worker-4] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:58:38.558
-2020-10-20 16:58:40,005 INFO  [HJZ quartzScheduler_Worker-5] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 16:58:40
-2020-10-20 16:58:40,016 INFO  [HJZ quartzScheduler_Worker-6] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:58:40.016
-2020-10-20 16:58:42,278 INFO  [HJZ quartzScheduler_Worker-7] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:58:42.278
-2020-10-20 16:58:42,532 INFO  [HJZ quartzScheduler_Worker-8] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 16:58:42
-2020-10-20 16:58:44,020 INFO  [HJZ quartzScheduler_Worker-9] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:58:44.020
-2020-10-20 16:58:44,395 INFO  [HJZ Thread-16] Caller+0	 at org.quartz.core.QuartzScheduler.standby(QuartzScheduler.java:585)
-Scheduler quartzScheduler_$_HJZ1603184264913 paused.
-2020-10-20 16:58:44,853 INFO  [HJZ Thread-16] Caller+0	 at org.springframework.scheduling.quartz.SchedulerFactoryBean.destroy(SchedulerFactoryBean.java:845)
-Shutting down Quartz Scheduler
-2020-10-20 16:58:44,853 INFO  [HJZ Thread-16] Caller+0	 at org.quartz.core.QuartzScheduler.shutdown(QuartzScheduler.java:666)
-Scheduler quartzScheduler_$_HJZ1603184264913 shutting down.
-2020-10-20 16:58:44,854 INFO  [HJZ Thread-16] Caller+0	 at org.quartz.core.QuartzScheduler.standby(QuartzScheduler.java:585)
-Scheduler quartzScheduler_$_HJZ1603184264913 paused.
-2020-10-20 16:58:44,855 INFO  [HJZ Thread-16] Caller+0	 at org.quartz.core.QuartzScheduler.shutdown(QuartzScheduler.java:740)
-Scheduler quartzScheduler_$_HJZ1603184264913 shutdown complete.
-2020-10-20 16:58:44,856 INFO  [HJZ Thread-16] Caller+0	 at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy(AbstractEntityManagerFactoryBean.java:598)
-Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-10-20 16:58:44,863 INFO  [HJZ Thread-16] Caller+0	 at org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218)
-Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-20 16:58:44,879 INFO  [HJZ Thread-16] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1825)
-{dataSource-1} closed
-2020-10-20 16:58:45,874 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55)
-Starting DistSchedulerApplication on HJZ with PID 26884 (D:\work_soft\IDEA_Tool\IntelliJ_IDEA\git_repositor\hjz\task-job\job1\target\classes started by Administrator in D:\work_soft\IDEA_Tool\IntelliJ_IDEA\git_repositor\hjz)
-2020-10-20 16:58:45,876 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:655)
+2020-10-21 09:18:20,957 INFO  [HJZ quartzScheduler_Worker-1] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 09:18:20.957
+2020-10-21 09:18:21,022 INFO  [HJZ quartzScheduler_Worker-2] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
+case2 UpdateRunningDaysJob at 2020-10-21 09:18:21
+2020-10-21 09:18:22,011 INFO  [HJZ quartzScheduler_Worker-3] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 09:18:22.011
+2020-10-21 09:18:24,011 INFO  [HJZ quartzScheduler_Worker-4] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 09:18:24.011
+2020-10-21 09:18:24,037 INFO  [HJZ quartzScheduler_Worker-5] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
+case2 UpdateRunningDaysJob at 2020-10-21 09:18:24
+2020-10-21 09:18:26,463 INFO  [HJZ quartzScheduler_Worker-6] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 09:18:26.463
+2020-10-21 09:18:27,011 INFO  [HJZ quartzScheduler_Worker-7] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
+case2 UpdateRunningDaysJob at 2020-10-21 09:18:27
+2020-10-21 09:18:28,009 INFO  [HJZ quartzScheduler_Worker-8] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 09:18:28.009
+2020-10-21 09:18:30,012 INFO  [HJZ quartzScheduler_Worker-9] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 09:18:30.012
+2020-10-21 09:18:30,025 INFO  [HJZ quartzScheduler_Worker-10] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
+case2 UpdateRunningDaysJob at 2020-10-21 09:18:30
+2020-10-21 09:18:32,009 INFO  [HJZ quartzScheduler_Worker-1] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 09:18:32.009
+2020-10-21 09:18:33,014 INFO  [HJZ quartzScheduler_Worker-2] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
+case2 UpdateRunningDaysJob at 2020-10-21 09:18:33
+2020-10-21 09:18:34,010 INFO  [HJZ quartzScheduler_Worker-3] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 09:18:34.010
+2020-10-21 09:18:36,011 INFO  [HJZ quartzScheduler_Worker-4] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 09:18:36.011
+2020-10-21 09:18:36,023 INFO  [HJZ quartzScheduler_Worker-5] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
+case2 UpdateRunningDaysJob at 2020-10-21 09:18:36
+2020-10-21 09:18:38,010 INFO  [HJZ quartzScheduler_Worker-6] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 09:18:38.010
+2020-10-21 09:18:39,010 INFO  [HJZ quartzScheduler_Worker-7] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
+case2 UpdateRunningDaysJob at 2020-10-21 09:18:39
+2020-10-21 09:18:40,009 INFO  [HJZ quartzScheduler_Worker-8] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 09:18:40.009
+2020-10-21 09:18:42,006 INFO  [HJZ quartzScheduler_Worker-9] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 09:18:42.006
+2020-10-21 09:18:42,051 INFO  [HJZ quartzScheduler_Worker-10] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
+case2 UpdateRunningDaysJob at 2020-10-21 09:18:42
+2020-10-21 09:18:44,083 INFO  [HJZ quartzScheduler_Worker-1] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 09:18:44.083
+2020-10-21 09:18:45,029 INFO  [HJZ quartzScheduler_Worker-2] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
+case2 UpdateRunningDaysJob at 2020-10-21 09:18:45
+2020-10-21 09:18:45,464 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55)
+Starting DistSchedulerApplication on HJZ with PID 22880 (D:\work_soft\IDEA_Tool\IntelliJ_IDEA\git_repositor\hjz\task-job\job1\target\classes started by Administrator in D:\work_soft\IDEA_Tool\IntelliJ_IDEA\git_repositor\hjz)
+2020-10-21 09:18:45,469 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:655)
 The following profiles are active: dev
-2020-10-20 16:58:46,923 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:127)
-Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-10-20 16:58:46,934 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:187)
-Finished Spring Data repository scanning in 9ms. Found 0 JPA repository interfaces.
-2020-10-20 16:58:47,260 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:108)
-Tomcat initialized with port(s): 9095 (http)
-2020-10-20 16:58:47,267 INFO  [HJZ restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
-Starting service [Tomcat]
-2020-10-20 16:58:47,268 INFO  [HJZ restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
-Starting Servlet engine: [Apache Tomcat/9.0.38]
-2020-10-20 16:58:47,325 INFO  [HJZ restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
-Initializing Spring embedded WebApplicationContext
-2020-10-20 16:58:47,325 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:285)
-Root WebApplicationContext: initialization completed in 1444 ms
-2020-10-20 16:58:47,475 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:181)
-Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-20 16:58:47,564 INFO  [HJZ restartedMain] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930)
-{dataSource-2} inited
-2020-10-20 16:58:47,619 INFO  [HJZ task-1] Caller+0	 at org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation(LogHelper.java:31)
-HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-10-20 16:58:47,652 INFO  [HJZ task-1] Caller+0	 at org.hibernate.dialect.Dialect.<init>(Dialect.java:170)
-HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2020-10-20 16:58:47,666 INFO  [HJZ task-1] Caller+0	 at org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)
-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-10-20 16:58:47,667 INFO  [HJZ task-1] Caller+0	 at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:416)
-Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-10-20 16:58:47,912 WARN  [HJZ restartedMain] Caller+0	 at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor(JpaBaseConfiguration.java:220)
-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-10-20 16:58:48,066 INFO  [HJZ restartedMain] Caller+0	 at springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69)
-Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-20 16:58:48,151 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1208)
-Using default implementation for ThreadExecutor
-2020-10-20 16:58:48,153 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.simpl.SimpleThreadPool.initialize(SimpleThreadPool.java:268)
-Job execution threads will use class loader of thread: restartedMain
-2020-10-20 16:58:48,155 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.SchedulerSignalerImpl.<init>(SchedulerSignalerImpl.java:61)
-Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-2020-10-20 16:58:48,155 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.QuartzScheduler.<init>(QuartzScheduler.java:229)
-Quartz Scheduler v.2.3.0 created.
-2020-10-20 16:58:48,156 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.jdbcjobstore.JobStoreSupport.initialize(JobStoreSupport.java:672)
-Using db table-based data access locking (synchronization).
-2020-10-20 16:58:48,156 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.jdbcjobstore.JobStoreCMT.initialize(JobStoreCMT.java:145)
-JobStoreCMT initialized.
-2020-10-20 16:58:48,156 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.QuartzScheduler.initialize(QuartzScheduler.java:294)
-Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'HJZ1603184328153'
-  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
-  NOT STARTED.
-  Currently in standby mode.
-  Number of jobs executed: 0
-  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
-  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
-
-2020-10-20 16:58:48,156 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1362)
-Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
-2020-10-20 16:58:48,156 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1366)
-Quartz scheduler version: 2.3.0
-2020-10-20 16:58:48,157 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.QuartzScheduler.setJobFactory(QuartzScheduler.java:2287)
-JobFactory set to: com.hu.config.QuartzSchedulerConfig$AutowiringSpringBeanJobFactory@7ee8a19b
-2020-10-20 16:58:48,307 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer(OptionalLiveReloadServer.java:58)
-LiveReload server is running on port 35729
-2020-10-20 16:58:48,570 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:220)
-Tomcat started on port(s): 9095 (http) with context path ''
-2020-10-20 16:58:48,570 INFO  [HJZ restartedMain] Caller+0	 at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:151)
-Context refreshed
-2020-10-20 16:58:48,613 INFO  [HJZ restartedMain] Caller+0	 at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:154)
-Found 1 custom documentation plugin(s)
-2020-10-20 16:58:48,685 INFO  [HJZ restartedMain] Caller+0	 at springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41)
-Scanning for api listing references
-2020-10-20 16:58:48,713 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.scheduling.quartz.SchedulerFactoryBean.startScheduler(SchedulerFactoryBean.java:727)
-Starting Quartz Scheduler now
-2020-10-20 16:58:48,718 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.QuartzScheduler.start(QuartzScheduler.java:547)
-Scheduler quartzScheduler_$_HJZ1603184328153 started.
-2020-10-20 16:58:48,721 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:49)
-Triggering deferred initialization of Spring Data repositories…
-2020-10-20 16:58:48,721 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:53)
-Spring Data repositories initialized!
-2020-10-20 16:58:48,726 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61)
-Started DistSchedulerApplication in 3.106 seconds (JVM running for 69.533)
-2020-10-20 16:58:48,728 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener.onApplicationEvent(ConditionEvaluationDeltaLoggingListener.java:63)
-Condition evaluation unchanged
-2020-10-20 16:58:48,728 INFO  [HJZ restartedMain] Caller+0	 at com.hu.DistSchedulerApplication.main(DistSchedulerApplication.java:19)
-DistSchedulerApplication Start done.
-2020-10-20 16:58:48,744 INFO  [HJZ quartzScheduler_Worker-1] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:58:48.744
-2020-10-20 16:58:48,756 INFO  [HJZ quartzScheduler_Worker-2] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 16:58:48
-2020-10-20 16:58:50,050 INFO  [HJZ quartzScheduler_Worker-3] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:58:50.050
-2020-10-20 16:58:51,007 INFO  [HJZ quartzScheduler_Worker-4] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 16:58:51
-2020-10-20 16:58:52,496 INFO  [HJZ quartzScheduler_Worker-5] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:58:52.496
-2020-10-20 16:58:54,009 INFO  [HJZ quartzScheduler_Worker-6] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:58:54.009
-2020-10-20 16:58:54,019 INFO  [HJZ quartzScheduler_Worker-7] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 16:58:54
-2020-10-20 16:58:56,199 INFO  [HJZ quartzScheduler_Worker-8] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:58:56.198
-2020-10-20 16:58:57,017 INFO  [HJZ quartzScheduler_Worker-9] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 16:58:57
-2020-10-20 16:58:58,016 INFO  [HJZ quartzScheduler_Worker-10] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:58:58.016
-2020-10-20 16:59:02,013 INFO  [HJZ quartzScheduler_Worker-1] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:59:02.013
-2020-10-20 16:59:03,063 INFO  [HJZ quartzScheduler_Worker-2] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 16:59:03
-2020-10-20 16:59:04,010 INFO  [HJZ quartzScheduler_Worker-3] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 16:59:04.010
-2020-10-20 16:59:05,627 INFO  [HJZ SpringContextShutdownHook] Caller+0	 at org.quartz.core.QuartzScheduler.standby(QuartzScheduler.java:585)
-Scheduler quartzScheduler_$_HJZ1603184328153 paused.
-2020-10-20 16:59:07,048 INFO  [HJZ SpringContextShutdownHook] Caller+0	 at org.springframework.scheduling.quartz.SchedulerFactoryBean.destroy(SchedulerFactoryBean.java:845)
-Shutting down Quartz Scheduler
-2020-10-20 16:59:07,048 INFO  [HJZ SpringContextShutdownHook] Caller+0	 at org.quartz.core.QuartzScheduler.shutdown(QuartzScheduler.java:666)
-Scheduler quartzScheduler_$_HJZ1603184328153 shutting down.
-2020-10-20 16:59:07,048 INFO  [HJZ SpringContextShutdownHook] Caller+0	 at org.quartz.core.QuartzScheduler.standby(QuartzScheduler.java:585)
-Scheduler quartzScheduler_$_HJZ1603184328153 paused.
-2020-10-20 16:59:07,049 INFO  [HJZ SpringContextShutdownHook] Caller+0	 at org.quartz.core.QuartzScheduler.shutdown(QuartzScheduler.java:740)
-Scheduler quartzScheduler_$_HJZ1603184328153 shutdown complete.
-2020-10-20 16:59:07,053 INFO  [HJZ SpringContextShutdownHook] Caller+0	 at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy(AbstractEntityManagerFactoryBean.java:598)
-Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-10-20 16:59:07,054 INFO  [HJZ SpringContextShutdownHook] Caller+0	 at org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218)
-Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-20 16:59:07,058 INFO  [HJZ SpringContextShutdownHook] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1825)
-{dataSource-2} closed
-2020-10-20 17:03:13,529 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55)
-Starting DistSchedulerApplication on HJZ with PID 23660 (D:\work_soft\IDEA_Tool\IntelliJ_IDEA\git_repositor\hjz\task-job\job1\target\classes started by Administrator in D:\work_soft\IDEA_Tool\IntelliJ_IDEA\git_repositor\hjz)
-2020-10-20 17:03:13,534 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:655)
-The following profiles are active: dev
-2020-10-20 17:03:13,599 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:225)
+2020-10-21 09:18:45,540 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:225)
 Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-10-20 17:03:13,600 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:225)
+2020-10-21 09:18:45,541 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:225)
 For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-10-20 17:03:14,928 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:127)
+2020-10-21 09:18:46,009 INFO  [HJZ quartzScheduler_Worker-3] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 09:18:46.008
+2020-10-21 09:18:47,102 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:127)
 Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-10-20 17:03:14,991 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:187)
-Finished Spring Data repository scanning in 41ms. Found 0 JPA repository interfaces.
-2020-10-20 17:03:16,278 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:108)
-Tomcat initialized with port(s): 9095 (http)
-2020-10-20 17:03:16,293 INFO  [HJZ restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
-Starting service [Tomcat]
-2020-10-20 17:03:16,294 INFO  [HJZ restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
-Starting Servlet engine: [Apache Tomcat/9.0.38]
-2020-10-20 17:03:16,522 INFO  [HJZ restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
-Initializing Spring embedded WebApplicationContext
-2020-10-20 17:03:16,523 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:285)
-Root WebApplicationContext: initialization completed in 2923 ms
-2020-10-20 17:03:16,814 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:181)
-Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-20 17:03:17,068 INFO  [HJZ restartedMain] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930)
-{dataSource-1} inited
-2020-10-20 17:03:17,117 INFO  [HJZ task-1] Caller+0	 at org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation(LogHelper.java:31)
-HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-10-20 17:03:17,191 INFO  [HJZ task-1] Caller+0	 at org.hibernate.Version.logVersion(Version.java:44)
-HHH000412: Hibernate ORM core version 5.4.21.Final
-2020-10-20 17:03:17,417 WARN  [HJZ restartedMain] Caller+0	 at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor(JpaBaseConfiguration.java:220)
-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-10-20 17:03:17,420 INFO  [HJZ task-1] Caller+0	 at org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:49)
-HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-10-20 17:03:17,600 INFO  [HJZ restartedMain] Caller+0	 at springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69)
-Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-20 17:03:17,606 INFO  [HJZ task-1] Caller+0	 at org.hibernate.dialect.Dialect.<init>(Dialect.java:170)
-HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2020-10-20 17:03:17,730 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1208)
-Using default implementation for ThreadExecutor
-2020-10-20 17:03:17,735 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.simpl.SimpleThreadPool.initialize(SimpleThreadPool.java:268)
-Job execution threads will use class loader of thread: restartedMain
-2020-10-20 17:03:17,746 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.SchedulerSignalerImpl.<init>(SchedulerSignalerImpl.java:61)
-Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-2020-10-20 17:03:17,747 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.QuartzScheduler.<init>(QuartzScheduler.java:229)
-Quartz Scheduler v.2.3.0 created.
-2020-10-20 17:03:17,753 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.jdbcjobstore.JobStoreSupport.initialize(JobStoreSupport.java:672)
-Using db table-based data access locking (synchronization).
-2020-10-20 17:03:17,757 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.jdbcjobstore.JobStoreCMT.initialize(JobStoreCMT.java:145)
-JobStoreCMT initialized.
-2020-10-20 17:03:17,758 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.QuartzScheduler.initialize(QuartzScheduler.java:294)
-Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'HJZ1603184597733'
-  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
-  NOT STARTED.
-  Currently in standby mode.
-  Number of jobs executed: 0
-  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
-  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
-
-2020-10-20 17:03:17,759 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1362)
-Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
-2020-10-20 17:03:17,759 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1366)
-Quartz scheduler version: 2.3.0
-2020-10-20 17:03:17,759 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.QuartzScheduler.setJobFactory(QuartzScheduler.java:2287)
-JobFactory set to: com.hu.config.QuartzSchedulerConfig$AutowiringSpringBeanJobFactory@3c3afc08
-2020-10-20 17:03:17,930 INFO  [HJZ task-1] Caller+0	 at org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)
-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-10-20 17:03:17,948 INFO  [HJZ task-1] Caller+0	 at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:416)
-Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-10-20 17:03:18,055 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer(OptionalLiveReloadServer.java:58)
-LiveReload server is running on port 35729
-2020-10-20 17:03:18,308 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:220)
-Tomcat started on port(s): 9095 (http) with context path ''
-2020-10-20 17:03:18,310 INFO  [HJZ restartedMain] Caller+0	 at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160)
-Context refreshed
-2020-10-20 17:03:18,335 INFO  [HJZ restartedMain] Caller+0	 at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163)
-Found 1 custom documentation plugin(s)
-2020-10-20 17:03:18,381 INFO  [HJZ restartedMain] Caller+0	 at springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41)
-Scanning for api listing references
-2020-10-20 17:03:18,399 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.scheduling.quartz.SchedulerFactoryBean.startScheduler(SchedulerFactoryBean.java:727)
-Starting Quartz Scheduler now
-2020-10-20 17:03:18,404 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.jdbcjobstore.JobStoreSupport.logWarnIfNonZero(JobStoreSupport.java:3629)
-ClusterManager: detected 2 failed or restarted instances.
-2020-10-20 17:03:18,404 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.jdbcjobstore.JobStoreSupport.clusterRecover(JobStoreSupport.java:3488)
-ClusterManager: Scanning for instance "HJZ1603184264913"'s failed in-progress jobs.
-2020-10-20 17:03:18,406 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.jdbcjobstore.JobStoreSupport.clusterRecover(JobStoreSupport.java:3488)
-ClusterManager: Scanning for instance "HJZ1603184328153"'s failed in-progress jobs.
-2020-10-20 17:03:18,412 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.QuartzScheduler.start(QuartzScheduler.java:547)
-Scheduler quartzScheduler_$_HJZ1603184597733 started.
-2020-10-20 17:03:18,413 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:49)
-Triggering deferred initialization of Spring Data repositories…
-2020-10-20 17:03:18,414 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:53)
-Spring Data repositories initialized!
-2020-10-20 17:03:18,426 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61)
-Started DistSchedulerApplication in 5.653 seconds (JVM running for 7.407)
-2020-10-20 17:03:18,430 INFO  [HJZ restartedMain] Caller+0	 at com.hu.DistSchedulerApplication.main(DistSchedulerApplication.java:19)
-DistSchedulerApplication Start done.
-2020-10-20 17:03:18,445 INFO  [HJZ quartzScheduler_Worker-1] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:03:18.445
-2020-10-20 17:03:18,455 INFO  [HJZ quartzScheduler_Worker-2] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 17:03:18
-2020-10-20 17:03:20,012 INFO  [HJZ quartzScheduler_Worker-3] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:03:20.012
-2020-10-20 17:03:21,010 INFO  [HJZ quartzScheduler_Worker-4] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 17:03:21
-2020-10-20 17:03:22,012 INFO  [HJZ quartzScheduler_Worker-5] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:03:22.012
-2020-10-20 17:03:24,010 INFO  [HJZ quartzScheduler_Worker-6] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:03:24.010
-2020-10-20 17:03:24,024 INFO  [HJZ quartzScheduler_Worker-7] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 17:03:24
-2020-10-20 17:03:26,017 INFO  [HJZ quartzScheduler_Worker-8] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:03:26.017
-2020-10-20 17:03:27,011 INFO  [HJZ quartzScheduler_Worker-9] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 17:03:27
-2020-10-20 17:03:28,010 INFO  [HJZ quartzScheduler_Worker-10] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:03:28.010
-2020-10-20 17:03:30,013 INFO  [HJZ quartzScheduler_Worker-1] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:03:30.013
-2020-10-20 17:03:30,027 INFO  [HJZ quartzScheduler_Worker-2] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 17:03:30
-2020-10-20 17:03:32,011 INFO  [HJZ quartzScheduler_Worker-3] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:03:32.011
-2020-10-20 17:03:33,011 INFO  [HJZ quartzScheduler_Worker-4] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 17:03:33
-2020-10-20 17:03:34,008 INFO  [HJZ quartzScheduler_Worker-5] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:03:34.008
-2020-10-20 17:03:36,007 INFO  [HJZ quartzScheduler_Worker-6] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:03:36.007
-2020-10-20 17:03:36,018 INFO  [HJZ quartzScheduler_Worker-7] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 17:03:36
-2020-10-20 17:03:38,007 INFO  [HJZ quartzScheduler_Worker-8] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:03:38.007
-2020-10-20 17:03:39,013 INFO  [HJZ quartzScheduler_Worker-9] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 17:03:39
-2020-10-20 17:03:40,009 INFO  [HJZ quartzScheduler_Worker-10] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:03:40.009
-2020-10-20 17:03:42,009 INFO  [HJZ quartzScheduler_Worker-1] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:03:42.009
-2020-10-20 17:03:42,020 INFO  [HJZ quartzScheduler_Worker-2] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 17:03:42
-2020-10-20 17:03:44,007 INFO  [HJZ quartzScheduler_Worker-3] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:03:44.007
-2020-10-20 17:03:45,010 INFO  [HJZ quartzScheduler_Worker-4] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 17:03:45
-2020-10-20 17:03:46,009 INFO  [HJZ quartzScheduler_Worker-5] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:03:46.009
-2020-10-20 17:03:48,011 INFO  [HJZ quartzScheduler_Worker-6] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:03:48.011
-2020-10-20 17:03:48,023 INFO  [HJZ quartzScheduler_Worker-7] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 17:03:48
-2020-10-20 17:03:50,007 INFO  [HJZ quartzScheduler_Worker-8] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:03:50.007
-2020-10-20 17:03:51,007 INFO  [HJZ quartzScheduler_Worker-9] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 17:03:51
-2020-10-20 17:03:52,010 INFO  [HJZ quartzScheduler_Worker-10] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:03:52.010
-2020-10-20 17:03:54,008 INFO  [HJZ quartzScheduler_Worker-1] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:03:54.008
-2020-10-20 17:03:54,021 INFO  [HJZ quartzScheduler_Worker-2] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 17:03:54
-2020-10-20 17:03:56,011 INFO  [HJZ quartzScheduler_Worker-3] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:03:56.011
-2020-10-20 17:03:57,010 INFO  [HJZ quartzScheduler_Worker-4] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 17:03:57
-2020-10-20 17:03:58,037 INFO  [HJZ quartzScheduler_Worker-5] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:03:58.037
-2020-10-20 17:04:02,008 INFO  [HJZ quartzScheduler_Worker-6] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:04:02.008
-2020-10-20 17:04:03,009 INFO  [HJZ quartzScheduler_Worker-7] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 17:04:03
-2020-10-20 17:04:04,008 INFO  [HJZ quartzScheduler_Worker-8] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:04:04.008
-2020-10-20 17:04:06,008 INFO  [HJZ quartzScheduler_Worker-9] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:04:06.008
-2020-10-20 17:04:06,019 INFO  [HJZ quartzScheduler_Worker-10] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 17:04:06
-2020-10-20 17:04:08,009 INFO  [HJZ quartzScheduler_Worker-1] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:04:08.009
-2020-10-20 17:04:09,010 INFO  [HJZ quartzScheduler_Worker-2] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 17:04:09
-2020-10-20 17:04:10,009 INFO  [HJZ quartzScheduler_Worker-3] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:04:10.009
-2020-10-20 17:04:12,006 INFO  [HJZ quartzScheduler_Worker-4] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:04:12.006
-2020-10-20 17:04:12,016 INFO  [HJZ quartzScheduler_Worker-5] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 17:04:12
-2020-10-20 17:04:14,024 INFO  [HJZ quartzScheduler_Worker-6] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:04:14.024
-2020-10-20 17:04:15,030 INFO  [HJZ quartzScheduler_Worker-7] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 17:04:15
-2020-10-20 17:04:16,009 INFO  [HJZ quartzScheduler_Worker-8] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:04:16.009
-2020-10-20 17:04:18,011 INFO  [HJZ quartzScheduler_Worker-9] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:04:18.011
-2020-10-20 17:04:18,025 INFO  [HJZ quartzScheduler_Worker-10] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 17:04:18
-2020-10-20 17:04:20,031 INFO  [HJZ quartzScheduler_Worker-1] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:04:20.031
-2020-10-20 17:04:21,010 INFO  [HJZ quartzScheduler_Worker-2] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 17:04:21
-2020-10-20 17:04:22,009 INFO  [HJZ quartzScheduler_Worker-3] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:04:22.009
-2020-10-20 17:04:24,010 INFO  [HJZ quartzScheduler_Worker-4] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:04:24.010
-2020-10-20 17:04:24,021 INFO  [HJZ quartzScheduler_Worker-5] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 17:04:24
-2020-10-20 17:04:26,063 INFO  [HJZ quartzScheduler_Worker-6] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:04:26.063
-2020-10-20 17:04:27,009 INFO  [HJZ quartzScheduler_Worker-7] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 17:04:27
-2020-10-20 17:04:28,009 INFO  [HJZ quartzScheduler_Worker-8] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:04:28.009
-2020-10-20 17:04:30,010 INFO  [HJZ quartzScheduler_Worker-9] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:04:30.010
-2020-10-20 17:04:30,020 INFO  [HJZ quartzScheduler_Worker-10] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 17:04:30
-2020-10-20 17:04:32,032 INFO  [HJZ quartzScheduler_Worker-1] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:04:32.032
-2020-10-20 17:04:33,009 INFO  [HJZ quartzScheduler_Worker-2] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 17:04:33
-2020-10-20 17:04:34,008 INFO  [HJZ quartzScheduler_Worker-3] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:04:34.008
-2020-10-20 17:04:36,008 INFO  [HJZ quartzScheduler_Worker-4] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:04:36.008
-2020-10-20 17:04:36,018 INFO  [HJZ quartzScheduler_Worker-5] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 17:04:36
-2020-10-20 17:04:38,010 INFO  [HJZ quartzScheduler_Worker-6] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:04:38.010
-2020-10-20 17:04:39,008 INFO  [HJZ quartzScheduler_Worker-7] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 17:04:39
-2020-10-20 17:04:40,008 INFO  [HJZ quartzScheduler_Worker-8] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:04:40.008
-2020-10-20 17:04:42,009 INFO  [HJZ quartzScheduler_Worker-9] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:04:42.009
-2020-10-20 17:04:42,018 INFO  [HJZ quartzScheduler_Worker-10] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 17:04:42
-2020-10-20 17:04:44,028 INFO  [HJZ quartzScheduler_Worker-1] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:04:44.028
-2020-10-20 17:04:45,005 INFO  [HJZ quartzScheduler_Worker-2] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 17:04:45
-2020-10-20 17:04:46,009 INFO  [HJZ quartzScheduler_Worker-3] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:04:46.009
-2020-10-20 17:04:48,009 INFO  [HJZ quartzScheduler_Worker-4] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:04:48.009
-2020-10-20 17:04:48,018 INFO  [HJZ quartzScheduler_Worker-5] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 17:04:48
-2020-10-20 17:04:50,024 INFO  [HJZ quartzScheduler_Worker-6] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:04:50.024
-2020-10-20 17:04:51,041 INFO  [HJZ quartzScheduler_Worker-7] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 17:04:51
-2020-10-20 17:04:52,030 INFO  [HJZ quartzScheduler_Worker-8] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:04:52.030
-2020-10-20 17:04:54,027 INFO  [HJZ quartzScheduler_Worker-9] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:04:54.027
-2020-10-20 17:04:54,096 INFO  [HJZ quartzScheduler_Worker-10] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 17:04:54
-2020-10-20 17:04:56,017 INFO  [HJZ quartzScheduler_Worker-1] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:04:56.017
-2020-10-20 17:04:57,008 INFO  [HJZ quartzScheduler_Worker-2] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 17:04:57
-2020-10-20 17:04:58,009 INFO  [HJZ quartzScheduler_Worker-3] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:04:58.009
-2020-10-20 17:05:02,008 INFO  [HJZ quartzScheduler_Worker-4] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:05:02.008
-2020-10-20 17:05:03,026 INFO  [HJZ quartzScheduler_Worker-5] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 17:05:03
-2020-10-20 17:05:04,016 INFO  [HJZ quartzScheduler_Worker-6] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:05:04.016
-2020-10-20 17:05:06,019 INFO  [HJZ quartzScheduler_Worker-7] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:05:06.018
-2020-10-20 17:05:06,039 INFO  [HJZ quartzScheduler_Worker-8] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 17:05:06
-2020-10-20 17:05:08,010 INFO  [HJZ quartzScheduler_Worker-9] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:05:08.010
-2020-10-20 17:05:09,008 INFO  [HJZ quartzScheduler_Worker-10] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 17:05:09
-2020-10-20 17:05:10,006 INFO  [HJZ quartzScheduler_Worker-1] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:05:10.006
-2020-10-20 17:05:12,007 INFO  [HJZ quartzScheduler_Worker-2] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:05:12.007
-2020-10-20 17:05:12,016 INFO  [HJZ quartzScheduler_Worker-3] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 17:05:12
-2020-10-20 17:05:14,008 INFO  [HJZ quartzScheduler_Worker-4] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
-case1 HelloWorldJob at 2020-10-20 17:05:14.008
-2020-10-20 17:05:15,008 INFO  [HJZ quartzScheduler_Worker-5] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
-case1 UpdateRunningDaysJob at 2020-10-20 17:05:15
-2020-10-20 17:05:15,714 INFO  [HJZ Thread-16] Caller+0	 at org.quartz.core.QuartzScheduler.standby(QuartzScheduler.java:585)
-Scheduler quartzScheduler_$_HJZ1603184597733 paused.
-2020-10-20 17:05:16,044 INFO  [HJZ Thread-16] Caller+0	 at org.springframework.scheduling.quartz.SchedulerFactoryBean.destroy(SchedulerFactoryBean.java:845)
-Shutting down Quartz Scheduler
-2020-10-20 17:05:16,044 INFO  [HJZ Thread-16] Caller+0	 at org.quartz.core.QuartzScheduler.shutdown(QuartzScheduler.java:666)
-Scheduler quartzScheduler_$_HJZ1603184597733 shutting down.
-2020-10-20 17:05:16,044 INFO  [HJZ Thread-16] Caller+0	 at org.quartz.core.QuartzScheduler.standby(QuartzScheduler.java:585)
-Scheduler quartzScheduler_$_HJZ1603184597733 paused.
-2020-10-20 17:05:16,045 INFO  [HJZ Thread-16] Caller+0	 at org.quartz.core.QuartzScheduler.shutdown(QuartzScheduler.java:740)
-Scheduler quartzScheduler_$_HJZ1603184597733 shutdown complete.
-2020-10-20 17:05:16,048 INFO  [HJZ Thread-16] Caller+0	 at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy(AbstractEntityManagerFactoryBean.java:598)
-Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-10-20 17:05:16,051 INFO  [HJZ Thread-16] Caller+0	 at org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218)
-Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-20 17:05:16,063 INFO  [HJZ Thread-16] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1825)
-{dataSource-1} closed
-2020-10-20 17:05:16,303 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55)
-Starting DistSchedulerApplication on HJZ with PID 23660 (D:\work_soft\IDEA_Tool\IntelliJ_IDEA\git_repositor\hjz\task-job\job1\target\classes started by Administrator in D:\work_soft\IDEA_Tool\IntelliJ_IDEA\git_repositor\hjz)
-2020-10-20 17:05:16,303 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:655)
-The following profiles are active: dev
-2020-10-20 17:05:17,132 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:127)
-Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-10-20 17:05:17,191 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:187)
-Finished Spring Data repository scanning in 59ms. Found 0 JPA repository interfaces.
-2020-10-20 17:05:17,621 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:108)
+2020-10-21 09:18:47,218 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:187)
+Finished Spring Data repository scanning in 60ms. Found 0 JPA repository interfaces.
+2020-10-21 09:18:48,010 INFO  [HJZ quartzScheduler_Worker-4] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 09:18:48.010
+2020-10-21 09:18:48,027 INFO  [HJZ quartzScheduler_Worker-5] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
+case2 UpdateRunningDaysJob at 2020-10-21 09:18:48
+2020-10-21 09:18:48,339 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:108)
 Tomcat initialized with port(s): 9090 (http)
-2020-10-20 17:05:17,622 INFO  [HJZ restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+2020-10-21 09:18:48,352 INFO  [HJZ restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
 Starting service [Tomcat]
-2020-10-20 17:05:17,625 INFO  [HJZ restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+2020-10-21 09:18:48,353 INFO  [HJZ restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
 Starting Servlet engine: [Apache Tomcat/9.0.38]
-2020-10-20 17:05:17,667 INFO  [HJZ restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+2020-10-21 09:18:48,548 INFO  [HJZ restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
 Initializing Spring embedded WebApplicationContext
-2020-10-20 17:05:17,668 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:285)
-Root WebApplicationContext: initialization completed in 1354 ms
-2020-10-20 17:05:17,743 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:181)
+2020-10-21 09:18:48,549 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:285)
+Root WebApplicationContext: initialization completed in 3008 ms
+2020-10-21 09:18:48,851 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:181)
 Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-20 17:05:17,774 INFO  [HJZ restartedMain] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930)
-{dataSource-2} inited
-2020-10-20 17:05:17,784 INFO  [HJZ task-1] Caller+0	 at org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation(LogHelper.java:31)
+2020-10-21 09:18:49,132 INFO  [HJZ restartedMain] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930)
+{dataSource-1} inited
+2020-10-21 09:18:49,190 INFO  [HJZ task-1] Caller+0	 at org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation(LogHelper.java:31)
 HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-10-20 17:05:17,805 INFO  [HJZ task-1] Caller+0	 at org.hibernate.dialect.Dialect.<init>(Dialect.java:170)
-HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2020-10-20 17:05:17,819 INFO  [HJZ task-1] Caller+0	 at org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)
-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-10-20 17:05:17,820 INFO  [HJZ task-1] Caller+0	 at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:416)
-Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-10-20 17:05:17,945 WARN  [HJZ restartedMain] Caller+0	 at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor(JpaBaseConfiguration.java:220)
+2020-10-21 09:18:49,263 INFO  [HJZ task-1] Caller+0	 at org.hibernate.Version.logVersion(Version.java:44)
+HHH000412: Hibernate ORM core version 5.4.21.Final
+2020-10-21 09:18:49,510 INFO  [HJZ task-1] Caller+0	 at org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:49)
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-10-21 09:18:49,514 WARN  [HJZ restartedMain] Caller+0	 at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor(JpaBaseConfiguration.java:220)
 spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-10-20 17:05:18,009 INFO  [HJZ restartedMain] Caller+0	 at springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69)
+2020-10-21 09:18:49,704 INFO  [HJZ restartedMain] Caller+0	 at springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69)
 Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-20 17:05:18,049 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1208)
+2020-10-21 09:18:49,707 INFO  [HJZ task-1] Caller+0	 at org.hibernate.dialect.Dialect.<init>(Dialect.java:170)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-10-21 09:18:49,824 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1208)
 Using default implementation for ThreadExecutor
-2020-10-20 17:05:18,050 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.simpl.SimpleThreadPool.initialize(SimpleThreadPool.java:268)
+2020-10-21 09:18:49,831 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.simpl.SimpleThreadPool.initialize(SimpleThreadPool.java:268)
 Job execution threads will use class loader of thread: restartedMain
-2020-10-20 17:05:18,051 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.SchedulerSignalerImpl.<init>(SchedulerSignalerImpl.java:61)
+2020-10-21 09:18:49,842 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.SchedulerSignalerImpl.<init>(SchedulerSignalerImpl.java:61)
 Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-2020-10-20 17:05:18,051 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.QuartzScheduler.<init>(QuartzScheduler.java:229)
+2020-10-21 09:18:49,843 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.QuartzScheduler.<init>(QuartzScheduler.java:229)
 Quartz Scheduler v.2.3.0 created.
-2020-10-20 17:05:18,052 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.jdbcjobstore.JobStoreSupport.initialize(JobStoreSupport.java:672)
+2020-10-21 09:18:49,850 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.jdbcjobstore.JobStoreSupport.initialize(JobStoreSupport.java:672)
 Using db table-based data access locking (synchronization).
-2020-10-20 17:05:18,052 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.jdbcjobstore.JobStoreCMT.initialize(JobStoreCMT.java:145)
+2020-10-21 09:18:49,852 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.jdbcjobstore.JobStoreCMT.initialize(JobStoreCMT.java:145)
 JobStoreCMT initialized.
-2020-10-20 17:05:18,052 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.QuartzScheduler.initialize(QuartzScheduler.java:294)
-Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'HJZ1603184718050'
+2020-10-21 09:18:49,853 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.QuartzScheduler.initialize(QuartzScheduler.java:294)
+Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'HJZ1603243129830'
   Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
   NOT STARTED.
   Currently in standby mode.
@@ -925,37 +202,43 @@ Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId
   Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
   Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
 
-2020-10-20 17:05:18,052 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1362)
+2020-10-21 09:18:49,854 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1362)
 Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
-2020-10-20 17:05:18,053 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1366)
+2020-10-21 09:18:49,854 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1366)
 Quartz scheduler version: 2.3.0
-2020-10-20 17:05:18,053 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.QuartzScheduler.setJobFactory(QuartzScheduler.java:2287)
-JobFactory set to: com.hu.config.QuartzSchedulerConfig$AutowiringSpringBeanJobFactory@46254d4a
-2020-10-20 17:05:18,136 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer(OptionalLiveReloadServer.java:58)
+2020-10-21 09:18:49,854 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.QuartzScheduler.setJobFactory(QuartzScheduler.java:2287)
+JobFactory set to: com.hu.config.QuartzSchedulerConfig$AutowiringSpringBeanJobFactory@2018e0bc
+2020-10-21 09:18:49,995 INFO  [HJZ task-1] Caller+0	 at org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-10-21 09:18:50,016 INFO  [HJZ task-1] Caller+0	 at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:416)
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-21 09:18:50,020 INFO  [HJZ quartzScheduler_Worker-6] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 09:18:50.020
+2020-10-21 09:18:50,155 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer(OptionalLiveReloadServer.java:58)
 LiveReload server is running on port 35729
-2020-10-20 17:05:18,298 WARN  [HJZ restartedMain] Caller+0	 at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:559)
+2020-10-21 09:18:50,415 WARN  [HJZ restartedMain] Caller+0	 at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:559)
 Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 9090 is already in use
-2020-10-20 17:05:18,299 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.scheduling.quartz.SchedulerFactoryBean.destroy(SchedulerFactoryBean.java:845)
+2020-10-21 09:18:50,417 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.scheduling.quartz.SchedulerFactoryBean.destroy(SchedulerFactoryBean.java:845)
 Shutting down Quartz Scheduler
-2020-10-20 17:05:18,300 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.QuartzScheduler.shutdown(QuartzScheduler.java:666)
-Scheduler quartzScheduler_$_HJZ1603184718050 shutting down.
-2020-10-20 17:05:18,300 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.QuartzScheduler.standby(QuartzScheduler.java:585)
-Scheduler quartzScheduler_$_HJZ1603184718050 paused.
-2020-10-20 17:05:18,301 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.QuartzScheduler.shutdown(QuartzScheduler.java:740)
-Scheduler quartzScheduler_$_HJZ1603184718050 shutdown complete.
-2020-10-20 17:05:18,303 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy(AbstractEntityManagerFactoryBean.java:598)
+2020-10-21 09:18:50,417 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.QuartzScheduler.shutdown(QuartzScheduler.java:666)
+Scheduler quartzScheduler_$_HJZ1603243129830 shutting down.
+2020-10-21 09:18:50,417 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.QuartzScheduler.standby(QuartzScheduler.java:585)
+Scheduler quartzScheduler_$_HJZ1603243129830 paused.
+2020-10-21 09:18:50,418 INFO  [HJZ restartedMain] Caller+0	 at org.quartz.core.QuartzScheduler.shutdown(QuartzScheduler.java:740)
+Scheduler quartzScheduler_$_HJZ1603243129830 shutdown complete.
+2020-10-21 09:18:50,419 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy(AbstractEntityManagerFactoryBean.java:598)
 Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-10-20 17:05:18,304 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218)
+2020-10-21 09:18:50,424 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218)
 Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-20 17:05:18,309 INFO  [HJZ restartedMain] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1825)
-{dataSource-2} closed
-2020-10-20 17:05:18,310 INFO  [HJZ restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+2020-10-21 09:18:50,432 INFO  [HJZ restartedMain] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1825)
+{dataSource-1} closed
+2020-10-21 09:18:50,435 INFO  [HJZ restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
 Stopping service [Tomcat]
-2020-10-20 17:05:18,320 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener.logMessage(ConditionEvaluationReportLoggingListener.java:136)
+2020-10-21 09:18:50,449 INFO  [HJZ restartedMain] Caller+0	 at org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener.logMessage(ConditionEvaluationReportLoggingListener.java:136)
 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2020-10-20 17:05:18,338 ERROR [HJZ restartedMain] Caller+0	 at org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter.report(LoggingFailureAnalysisReporter.java:40)
+2020-10-21 09:18:50,458 ERROR [HJZ restartedMain] Caller+0	 at org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter.report(LoggingFailureAnalysisReporter.java:40)
 
 
 ***************************
@@ -970,3 +253,23 @@ Action:
 
 Identify and stop the process that's listening on port 9090 or configure this application to listen on another port.
 
+2020-10-21 09:18:51,007 INFO  [HJZ quartzScheduler_Worker-7] Caller+0	 at com.hu.job.UpdateRunningDaysJob.executeInternal(UpdateRunningDaysJob.java:26)
+case2 UpdateRunningDaysJob at 2020-10-21 09:18:51
+2020-10-21 09:18:52,013 INFO  [HJZ quartzScheduler_Worker-8] Caller+0	 at com.hu.job.HelloWorldJob.executeInternal(HelloWorldJob.java:26)
+case2 HelloWorldJob at 2020-10-21 09:18:52.013
+2020-10-21 09:18:53,183 INFO  [HJZ SpringContextShutdownHook] Caller+0	 at org.quartz.core.QuartzScheduler.standby(QuartzScheduler.java:585)
+Scheduler quartzScheduler_$_HJZ1603243100214 paused.
+2020-10-21 09:18:53,996 INFO  [HJZ SpringContextShutdownHook] Caller+0	 at org.springframework.scheduling.quartz.SchedulerFactoryBean.destroy(SchedulerFactoryBean.java:845)
+Shutting down Quartz Scheduler
+2020-10-21 09:18:53,996 INFO  [HJZ SpringContextShutdownHook] Caller+0	 at org.quartz.core.QuartzScheduler.shutdown(QuartzScheduler.java:666)
+Scheduler quartzScheduler_$_HJZ1603243100214 shutting down.
+2020-10-21 09:18:53,996 INFO  [HJZ SpringContextShutdownHook] Caller+0	 at org.quartz.core.QuartzScheduler.standby(QuartzScheduler.java:585)
+Scheduler quartzScheduler_$_HJZ1603243100214 paused.
+2020-10-21 09:18:53,997 INFO  [HJZ SpringContextShutdownHook] Caller+0	 at org.quartz.core.QuartzScheduler.shutdown(QuartzScheduler.java:740)
+Scheduler quartzScheduler_$_HJZ1603243100214 shutdown complete.
+2020-10-21 09:18:53,999 INFO  [HJZ SpringContextShutdownHook] Caller+0	 at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy(AbstractEntityManagerFactoryBean.java:598)
+Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-21 09:18:54,003 INFO  [HJZ SpringContextShutdownHook] Caller+0	 at org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218)
+Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-21 09:18:54,014 INFO  [HJZ SpringContextShutdownHook] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1825)
+{dataSource-1} closed
