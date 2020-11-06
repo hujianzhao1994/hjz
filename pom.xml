@@ -5,6 +5,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>shardingSphere</module>
+        <module>pay</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
