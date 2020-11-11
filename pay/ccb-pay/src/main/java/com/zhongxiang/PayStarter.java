@@ -15,7 +15,7 @@ import javax.swing.*;
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
 public class PayStarter {
 
-//    public static void main(String[] args) {
-//        SpringApplication.run(PayStarter.class,args);
-//    }
+    public static void main(String[] args) {
+        SpringApplication.run(PayStarter.class,args);
+    }
 }

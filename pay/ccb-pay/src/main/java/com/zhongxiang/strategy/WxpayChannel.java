@@ -13,4 +13,9 @@ public class WxpayChannel extends PayChannelStrategy {
         System.out.println("wxPay.......");
         return obj;
     }
+
+    @Override
+    public Object notify(Object obj) {
+        return null;
+    }
 }

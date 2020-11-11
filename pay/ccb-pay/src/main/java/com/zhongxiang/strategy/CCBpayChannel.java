@@ -96,6 +96,12 @@ public class CCBpayChannel extends PayChannelStrategy {
         return obj;
     }
 
+    @Override
+    public Object notify(Object obj) {
+
+        return null;
+    }
+
 
 }
 

@@ -13,4 +13,10 @@ public class AlipayChannel extends PayChannelStrategy {
         System.out.println("alipay.......");
         return obj;
     }
+
+
+    @Override
+    public Object notify(Object obj) {
+        return null;
+    }
 }

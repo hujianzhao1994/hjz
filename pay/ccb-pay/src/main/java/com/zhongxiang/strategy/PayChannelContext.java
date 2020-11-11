@@ -17,4 +17,14 @@ public class PayChannelContext {
     public Object pay(Object  obj){
         return  strategy.pay(obj);
     }
+
+
+    /**
+     *      商 户 通 知 接 口
+     * @param obj
+     * @return
+     */
+    public Object notify(Object obj){
+        return strategy.notify(obj);
+    }
 }

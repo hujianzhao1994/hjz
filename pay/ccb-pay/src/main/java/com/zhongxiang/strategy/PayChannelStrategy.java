@@ -9,5 +9,9 @@ package com.zhongxiang.strategy;
 public abstract class PayChannelStrategy {
 
 
+
     public abstract Object pay(Object obj);
+
+    // 商户 通知 接口
+    public abstract Object notify(Object obj);
 }
