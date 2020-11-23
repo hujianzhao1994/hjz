@@ -8,7 +8,7 @@ package com.zhongxiang.strategy;
  **/
 public class AlipayChannel extends PayChannelStrategy {
     @Override
-    public Object pay(Object obj) {
+    public Object unifiedorder(Object obj) {
         System.out.println(this.getClass().getCanonicalName());
         System.out.println("alipay.......");
         return obj;

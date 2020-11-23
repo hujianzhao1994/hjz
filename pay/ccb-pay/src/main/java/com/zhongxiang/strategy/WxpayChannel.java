@@ -8,7 +8,7 @@ package com.zhongxiang.strategy;
  **/
 public class WxpayChannel extends PayChannelStrategy {
     @Override
-    public Object pay(Object obj) {
+    public Object unifiedorder(Object obj) {
         System.out.println(this.getClass().getCanonicalName());
         System.out.println("wxPay.......");
         return obj;

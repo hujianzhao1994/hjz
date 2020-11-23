@@ -6,6 +6,9 @@
     <modules>
         <module>shardingSphere</module>
         <module>pay</module>
+        <module>dingtalk-notice</module>
+        <module>java-basic</module>
+        <module>spring</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -86,6 +89,11 @@
             <version>${quartz.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
+        </dependency>
 
     </dependencies>
 

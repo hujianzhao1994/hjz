@@ -11,7 +11,7 @@ public class StrategyClient {
     public static void main(String[] args) {
 
         PayChannelContext context = new PayChannelContext(new AlipayChannel());
-        Object pay = context.pay("nin hao ");
+        Object pay = context.unifiedorder("nin hao ");
         System.out.println(pay);
 
     }

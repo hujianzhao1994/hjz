@@ -26,7 +26,7 @@ public class CCBpayChannel extends PayChannelStrategy {
 
 
     @Override
-    public Object pay(Object obj) {
+    public Object unifiedorder(Object obj) {
         System.out.println(this.getClass().getCanonicalName());
         String bankURL="https://ibsbjstar.ccb.com.cn/CCBIS/ccbMain";
         bankURL="http://124.127.94.61:8001/CCBIS/ccbMain";

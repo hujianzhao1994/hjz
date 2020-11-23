@@ -14,8 +14,8 @@ public class PayChannelContext {
         this.strategy = strategy;
     }
 
-    public Object pay(Object  obj){
-        return  strategy.pay(obj);
+    public Object unifiedorder(Object  obj){
+        return  strategy.unifiedorder(obj);
     }
 
 
