@@ -4,4 +4,4 @@
 
 
 1.执行SQL脚本：myscheduler.sql
-2.分别启动job1,job2
+2.分别启动job1,job2 两个节点
