@@ -9,6 +9,8 @@
         <module>dingtalk-notice</module>
         <module>java-basic</module>
         <module>spring</module>
+        <module>mq</module>
+        <module>task-job</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
