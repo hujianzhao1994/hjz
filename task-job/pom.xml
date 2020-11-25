@@ -4,8 +4,8 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
     <modules>
-        <module>job1</module>
-        <module>job2</module>
+        <module>xxl-job</module>
+        <module>rpc-job</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
