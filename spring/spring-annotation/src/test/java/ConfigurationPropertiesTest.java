@@ -24,5 +24,7 @@ public class ConfigurationPropertiesTest {
     @Test
     public void test1() {
         System.out.println(gookerProperties.getCompanyName());
+        System.out.println(gookerProperties.getPersonNum());
+
     }
 }
