@@ -1,19 +1,13 @@
 package com.hu.config;
 
 
-import javax.sql.DataSource;
-
 import com.hu.job.HelloWorldJob;
-import com.hu.job.UpdateRunningDaysJob;
 import lombok.extern.slf4j.Slf4j;
 import org.quartz.CronTrigger;
 import org.quartz.JobDetail;
 import org.quartz.spi.JobFactory;
 import org.quartz.spi.TriggerFiredBundle;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.config.AutowireCapableBeanFactory;
 import org.springframework.beans.factory.config.PropertiesFactoryBean;
 import org.springframework.context.ApplicationContext;
@@ -26,6 +20,7 @@ import org.springframework.scheduling.quartz.JobDetailFactoryBean;
 import org.springframework.scheduling.quartz.SchedulerFactoryBean;
 import org.springframework.scheduling.quartz.SpringBeanJobFactory;
 
+import javax.sql.DataSource;
 import java.io.IOException;
 import java.util.Properties;
 
@@ -44,6 +39,36 @@ public class QuartzSchedulerConfig {
     private DataSource dataSource;
 
     private static final String QUARTZ_PROPERTIES_NAME = "/quartz.properties";
+
+
+    @Bean
+    public Properties quartzProperties() throws IOException {
+        PropertiesFactoryBean propertiesFactoryBean = new PropertiesFactoryBean();
+        propertiesFactoryBean.setLocation(new ClassPathResource(QUARTZ_PROPERTIES_NAME));
+        propertiesFactoryBean.afterPropertiesSet();
+        return propertiesFactoryBean.getObject();
+    }
+
+    /**
+     * 继承org.springframework.scheduling.quartz.SpringBeanJobFactory
+     * 实现任务实例化方式
+     */
+    class AutowiringSpringBeanJobFactory extends SpringBeanJobFactory implements ApplicationContextAware {
+
+        private transient AutowireCapableBeanFactory beanFactory;
+
+        @Override
+        public void setApplicationContext(final ApplicationContext context) {
+            beanFactory = context.getAutowireCapableBeanFactory();
+        }
+
+        @Override
+        protected Object createJobInstance(final TriggerFiredBundle bundle) throws Exception {
+            final Object job = super.createJobInstance(bundle);
+            beanFactory.autowireBean(job);
+            return job;
+        }
+    }
 
     @Bean
     public JobFactory jobFactory(ApplicationContext applicationContext) {
@@ -71,60 +96,24 @@ public class QuartzSchedulerConfig {
         return factoryBean;
     }
 
-    @Bean(name = "job1Trigger")
-    public CronTriggerFactoryBean job1Trigger(@Qualifier("jobHelloWorldDetail") JobDetail jobDetail) {
-        CronTriggerFactoryBean cronTriggerFactoryBean = new CronTriggerFactoryBean();
-        cronTriggerFactoryBean.setJobDetail(jobDetail);
-        cronTriggerFactoryBean.setCronExpression("2/2 * * * * ?");
-        return cronTriggerFactoryBean;
-    }
-
-    @Bean(name = "jobHelloWorldDetail")
-    public JobDetailFactoryBean job1Detail() {
+    /*********************分布式任务调度helloWorld  begin********************************/
+    @Bean
+    public JobDetailFactoryBean helloWorldJobDetail() {
         JobDetailFactoryBean jobDetailFactoryBean = new JobDetailFactoryBean();
         jobDetailFactoryBean.setJobClass(HelloWorldJob.class);
         jobDetailFactoryBean.setDurability(true);
         return jobDetailFactoryBean;
     }
-
-    @Bean(name = "job2Trigger")
-    public CronTriggerFactoryBean job2Trigger(@Qualifier("jobUpdateRunningDaysDetail") JobDetail jobDetail) {
+    @Bean
+    public CronTriggerFactoryBean helloWorldjobTrigger(JobDetail helloWorldJobDetail) {
         CronTriggerFactoryBean cronTriggerFactoryBean = new CronTriggerFactoryBean();
-        cronTriggerFactoryBean.setJobDetail(jobDetail);
-        cronTriggerFactoryBean.setCronExpression("3/3 * * * * ?");
+        cronTriggerFactoryBean.setJobDetail(helloWorldJobDetail);
+        cronTriggerFactoryBean.setCronExpression("2/2 * * * * ?");
         return cronTriggerFactoryBean;
     }
 
-    @Bean(name = "jobUpdateRunningDaysDetail")
-    public JobDetailFactoryBean job2Detail() {
-        JobDetailFactoryBean jobDetailFactoryBean = new JobDetailFactoryBean();
-        jobDetailFactoryBean.setJobClass(UpdateRunningDaysJob.class);
-        jobDetailFactoryBean.setDurability(true);
-        return jobDetailFactoryBean;
-    }
+    /*********************分布式任务调度helloWorld  end********************************/
 
-    @Bean
-    public Properties quartzProperties() throws IOException {
-        PropertiesFactoryBean propertiesFactoryBean = new PropertiesFactoryBean();
-        propertiesFactoryBean.setLocation(new ClassPathResource(QUARTZ_PROPERTIES_NAME));
-        propertiesFactoryBean.afterPropertiesSet();
-        return propertiesFactoryBean.getObject();
-    }
 
-    class AutowiringSpringBeanJobFactory extends SpringBeanJobFactory implements ApplicationContextAware {
 
-        private transient AutowireCapableBeanFactory beanFactory;
-
-        @Override
-        public void setApplicationContext(final ApplicationContext context) {
-            beanFactory = context.getAutowireCapableBeanFactory();
-        }
-
-        @Override
-        protected Object createJobInstance(final TriggerFiredBundle bundle) throws Exception {
-            final Object job = super.createJobInstance(bundle);
-            beanFactory.autowireBean(job);
-            return job;
-        }
-    }
 }
