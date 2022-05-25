@@ -1,0 +1,1 @@
+2022-05-10 14:47:50.442 - [WARN ] [org.mybatis.spring.mapper.ClassPathMapperScanner : 44] - No MyBatis mapper was found in '[com.jr]' package. Please check your configuration.

@@ -1,0 +1,1369 @@
+2022-05-09 17:24:57.977 - [WARN ] [org.mybatis.spring.mapper.ClassPathMapperScanner : 44] - No MyBatis mapper was found in '[com.jr]' package. Please check your configuration.
+2022-05-09 17:25:02.663 - [WARN ] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : 559] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'quartzScheduler' defined in class path resource [org/springframework/boot/autoconfigure/quartz/QuartzAutoConfiguration.class]: Invocation of init method failed; nested exception is org.quartz.JobPersistenceException: Couldn't retrieve job because a required class was not found: com.hu.job.PrintLogJob [See nested exception: java.lang.ClassNotFoundException: com.hu.job.PrintLogJob]
+2022-05-09 17:25:02.789 - [ERROR] [org.springframework.boot.SpringApplication : 837] - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'quartzScheduler' defined in class path resource [org/springframework/boot/autoconfigure/quartz/QuartzAutoConfiguration.class]: Invocation of init method failed; nested exception is org.quartz.JobPersistenceException: Couldn't retrieve job because a required class was not found: com.hu.job.PrintLogJob [See nested exception: java.lang.ClassNotFoundException: com.hu.job.PrintLogJob]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.jr.UserCoreApplication.main(UserCoreApplication.java:14)
+Caused by: org.quartz.JobPersistenceException: Couldn't retrieve job because a required class was not found: com.hu.job.PrintLogJob
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.retrieveJob(JobStoreSupport.java:1393)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$9.execute(JobStoreSupport.java:1382)
+	at org.quartz.impl.jdbcjobstore.JobStoreCMT.executeInLock(JobStoreCMT.java:245)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeWithoutLock(JobStoreSupport.java:3800)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.retrieveJob(JobStoreSupport.java:1379)
+	at org.quartz.core.QuartzScheduler.getJobDetail(QuartzScheduler.java:1493)
+	at org.quartz.impl.StdScheduler.getJobDetail(StdScheduler.java:498)
+	at org.springframework.scheduling.quartz.SchedulerAccessor.addJobToScheduler(SchedulerAccessor.java:283)
+	at org.springframework.scheduling.quartz.SchedulerAccessor.registerJobsAndTriggers(SchedulerAccessor.java:226)
+	at org.springframework.scheduling.quartz.SchedulerFactoryBean.afterPropertiesSet(SchedulerFactoryBean.java:505)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790)
+	... 17 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.hu.job.PrintLogJob
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:338)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:284)
+	at org.springframework.scheduling.quartz.ResourceLoaderClassLoadHelper.loadClass(ResourceLoaderClassLoadHelper.java:81)
+	at org.springframework.scheduling.quartz.ResourceLoaderClassLoadHelper.loadClass(ResourceLoaderClassLoadHelper.java:87)
+	at org.quartz.impl.jdbcjobstore.StdJDBCDelegate.selectJobDetail(StdJDBCDelegate.java:852)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.retrieveJob(JobStoreSupport.java:1390)
+	... 28 common frames omitted
+2022-05-09 17:28:59.268 - [WARN ] [org.mybatis.spring.mapper.ClassPathMapperScanner : 44] - No MyBatis mapper was found in '[com.jr]' package. Please check your configuration.
+2022-05-09 17:29:04.628 - [WARN ] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : 559] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'quartzScheduler' defined in class path resource [org/springframework/boot/autoconfigure/quartz/QuartzAutoConfiguration.class]: Invocation of init method failed; nested exception is org.quartz.JobPersistenceException: Couldn't retrieve job because a required class was not found: com.hu.job.PrintLogJob [See nested exception: java.lang.ClassNotFoundException: com.hu.job.PrintLogJob]
+2022-05-09 17:29:04.707 - [ERROR] [org.springframework.boot.SpringApplication : 837] - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'quartzScheduler' defined in class path resource [org/springframework/boot/autoconfigure/quartz/QuartzAutoConfiguration.class]: Invocation of init method failed; nested exception is org.quartz.JobPersistenceException: Couldn't retrieve job because a required class was not found: com.hu.job.PrintLogJob [See nested exception: java.lang.ClassNotFoundException: com.hu.job.PrintLogJob]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.jr.UserCoreApplication.main(UserCoreApplication.java:14)
+Caused by: org.quartz.JobPersistenceException: Couldn't retrieve job because a required class was not found: com.hu.job.PrintLogJob
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.retrieveJob(JobStoreSupport.java:1393)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$9.execute(JobStoreSupport.java:1382)
+	at org.quartz.impl.jdbcjobstore.JobStoreCMT.executeInLock(JobStoreCMT.java:245)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeWithoutLock(JobStoreSupport.java:3800)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.retrieveJob(JobStoreSupport.java:1379)
+	at org.quartz.core.QuartzScheduler.getJobDetail(QuartzScheduler.java:1493)
+	at org.quartz.impl.StdScheduler.getJobDetail(StdScheduler.java:498)
+	at org.springframework.scheduling.quartz.SchedulerAccessor.addJobToScheduler(SchedulerAccessor.java:283)
+	at org.springframework.scheduling.quartz.SchedulerAccessor.registerJobsAndTriggers(SchedulerAccessor.java:226)
+	at org.springframework.scheduling.quartz.SchedulerFactoryBean.afterPropertiesSet(SchedulerFactoryBean.java:505)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790)
+	... 17 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.hu.job.PrintLogJob
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:338)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:284)
+	at org.springframework.scheduling.quartz.ResourceLoaderClassLoadHelper.loadClass(ResourceLoaderClassLoadHelper.java:81)
+	at org.springframework.scheduling.quartz.ResourceLoaderClassLoadHelper.loadClass(ResourceLoaderClassLoadHelper.java:87)
+	at org.quartz.impl.jdbcjobstore.StdJDBCDelegate.selectJobDetail(StdJDBCDelegate.java:852)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.retrieveJob(JobStoreSupport.java:1390)
+	... 28 common frames omitted
+2022-05-09 17:32:22.739 - [WARN ] [org.mybatis.spring.mapper.ClassPathMapperScanner : 44] - No MyBatis mapper was found in '[com.jr]' package. Please check your configuration.
+2022-05-09 17:32:30.454 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:32:30.584 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:32:34.003 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:32:34.038 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:32:36.095 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:32:36.115 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:32:39.064 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:32:39.093 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:32:42.040 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:32:42.069 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:32:45.008 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:32:45.014 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:32:48.028 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:32:48.038 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:32:51.018 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:32:51.036 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:32:54.014 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:32:54.043 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:32:57.009 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:32:57.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:33:03.009 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:33:03.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:33:06.007 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:33:06.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:33:09.016 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:33:09.030 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:33:12.007 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:33:12.016 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:33:15.007 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:33:15.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:33:18.006 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:33:18.015 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:33:21.017 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:33:21.030 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:33:24.007 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:33:24.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:33:27.007 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:33:27.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:33:30.006 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:33:30.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:33:33.027 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:33:33.030 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:33:36.020 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:33:36.029 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:33:39.023 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:33:39.026 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:33:42.006 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:33:42.018 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:33:45.318 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:33:45.325 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:33:48.007 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:33:48.015 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:33:51.029 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:33:51.040 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:33:54.006 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:33:54.018 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:33:57.008 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:33:57.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:34:03.006 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:34:03.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:34:06.007 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:34:06.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:34:09.007 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:34:09.014 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:34:12.007 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:34:12.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:34:15.009 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:34:15.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:34:18.006 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:34:18.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:34:21.007 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:34:21.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:34:24.007 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:34:24.017 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:34:27.007 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:34:27.017 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:34:30.009 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:34:30.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:34:33.160 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:34:33.163 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:38:51.335 - [WARN ] [org.mybatis.spring.mapper.ClassPathMapperScanner : 44] - No MyBatis mapper was found in '[com.jr]' package. Please check your configuration.
+2022-05-09 17:38:55.776 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:38:55.873 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:38:57.010 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:38:57.017 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:39:03.011 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:39:03.016 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:39:06.007 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:39:06.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:39:09.051 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:39:09.079 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:39:12.007 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:39:12.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:39:15.010 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:39:15.014 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:39:18.008 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:39:18.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:39:21.009 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:39:21.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:39:24.008 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:39:24.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:39:27.008 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:39:27.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:39:30.010 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:39:30.014 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:39:33.015 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:39:33.029 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:39:36.007 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:39:36.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:39:39.009 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:39:39.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:39:42.007 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:39:42.018 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:39:45.010 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:39:45.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:39:48.009 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:39:48.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:39:51.009 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:39:51.019 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:39:54.005 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:39:54.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:39:57.019 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:39:57.026 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:40:03.056 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:40:03.093 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:40:06.045 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:40:06.077 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:40:09.026 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:40:09.052 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:40:12.236 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:40:12.450 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:40:16.141 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:40:16.363 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:40:18.773 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:40:18.999 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:40:21.017 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:40:21.020 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:40:24.019 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:40:24.028 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:40:27.018 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:40:27.020 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:40:30.007 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:40:30.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:40:33.006 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:40:33.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:40:36.008 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:40:36.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:40:39.015 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:40:39.020 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:40:42.007 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:40:42.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:40:45.006 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:40:45.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:40:48.006 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:40:48.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:40:51.007 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:40:51.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:40:54.011 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:40:54.016 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:40:57.006 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:40:57.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:41:03.006 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:41:03.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:41:06.006 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:41:06.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:41:09.007 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:41:09.015 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:41:12.007 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:41:12.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:41:15.005 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:41:15.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:41:18.019 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:41:18.022 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:41:21.008 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:41:21.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:41:24.009 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:41:24.014 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:41:27.006 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:41:27.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:41:30.005 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:41:30.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:41:33.024 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:41:33.047 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:41:36.005 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:41:36.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:41:39.006 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:41:39.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:41:42.025 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:41:42.032 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:41:45.006 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:41:45.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:42:48.761 - [WARN ] [org.mybatis.spring.mapper.ClassPathMapperScanner : 44] - No MyBatis mapper was found in '[com.jr]' package. Please check your configuration.
+2022-05-09 17:42:54.030 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:42:54.122 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:42:57.009 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:42:57.017 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:43:03.015 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:43:03.021 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:43:06.009 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:43:06.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:43:09.008 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:43:09.014 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:43:12.011 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:43:12.015 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:43:15.011 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:43:15.015 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:43:18.009 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:43:18.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:43:21.009 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:43:21.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:43:24.009 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:43:24.014 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:43:27.010 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:43:27.019 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:43:30.012 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:43:30.023 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:43:33.008 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:43:33.014 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:43:36.009 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:43:36.022 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:43:39.016 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:43:39.024 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:43:42.018 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:43:42.029 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:43:45.037 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:43:45.044 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:43:48.006 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:43:48.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:43:51.009 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:43:51.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:43:54.007 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:43:54.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:43:57.021 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:43:57.026 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:44:03.007 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:44:03.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:44:06.011 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:44:06.022 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:44:09.008 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:44:09.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:44:12.006 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:44:12.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:44:15.037 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:44:15.062 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:44:18.120 - [WARN ] [com.jr.job.PrintLogJob : 25] - 【1】 printLog---【1】
+2022-05-09 17:44:18.420 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】
+2022-05-09 17:45:43.760 - [WARN ] [org.mybatis.spring.mapper.ClassPathMapperScanner : 44] - No MyBatis mapper was found in '[com.jr]' package. Please check your configuration.
+2022-05-09 17:45:47.731 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=131
+2022-05-09 17:45:48.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=132
+2022-05-09 17:45:51.015 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=133
+2022-05-09 17:45:54.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=134
+2022-05-09 17:45:57.015 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=135
+2022-05-09 17:46:03.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=136
+2022-05-09 17:46:06.015 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=137
+2022-05-09 17:46:09.021 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=138
+2022-05-09 17:46:12.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=139
+2022-05-09 17:46:15.016 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=140
+2022-05-09 17:46:18.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=141
+2022-05-09 17:46:21.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=142
+2022-05-09 17:46:24.021 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=143
+2022-05-09 17:46:29.010 - [ERROR] [org.quartz.core.ErrorLogger : 2407] - An error occurred while firing triggers '[Trigger 'DEFAULT.PrintLogJob':  triggerClass: 'org.quartz.impl.triggers.CronTriggerImpl calendar: 'null' misfireInstruction: 0 nextFireTime: Mon May 09 17:46:27 CST 2022]'
+org.quartz.impl.jdbcjobstore.LockException: Failure obtaining db row lock: Table 'myscheduler.qrtz_locks' doesn't exist
+	at org.quartz.impl.jdbcjobstore.StdRowLockSemaphore.executeSQL(StdRowLockSemaphore.java:184)
+	at org.quartz.impl.jdbcjobstore.DBSemaphore.obtainLock(DBSemaphore.java:113)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3857)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.triggersFired(JobStoreSupport.java:2977)
+	at org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:353)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'myscheduler.qrtz_locks' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1003)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.executeQuery(DruidPooledPreparedStatement.java:228)
+	at org.quartz.impl.jdbcjobstore.StdRowLockSemaphore.executeSQL(StdRowLockSemaphore.java:123)
+	... 4 common frames omitted
+2022-05-09 17:46:47.561 - [ERROR] [org.springframework.scheduling.quartz.LocalDataSourceJobStore : 4017] - MisfireHandler: Error handling misfires: Database error recovering from misfires.
+org.quartz.JobPersistenceException: Database error recovering from misfires.
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.doRecoverMisfires(JobStoreSupport.java:3274)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.manage(JobStoreSupport.java:4012)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.run(JobStoreSupport.java:4033)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'myscheduler.qrtz_triggers' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1003)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.executeQuery(DruidPooledPreparedStatement.java:228)
+	at org.quartz.impl.jdbcjobstore.StdJDBCDelegate.countMisfiredTriggersInState(StdJDBCDelegate.java:393)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.doRecoverMisfires(JobStoreSupport.java:3253)
+	... 2 common frames omitted
+2022-05-09 17:47:26.656 - [WARN ] [org.mybatis.spring.mapper.ClassPathMapperScanner : 44] - No MyBatis mapper was found in '[com.jr]' package. Please check your configuration.
+2022-05-09 17:47:30.625 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=1
+2022-05-09 17:47:33.066 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=2
+2022-05-09 17:47:36.079 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=3
+2022-05-09 17:47:39.071 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=4
+2022-05-09 17:47:42.016 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=5
+2022-05-09 17:47:45.035 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=6
+2022-05-09 17:47:48.016 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=7
+2022-05-09 17:47:51.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=8
+2022-05-09 17:47:54.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=9
+2022-05-09 17:47:57.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=10
+2022-05-09 17:48:03.014 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=11
+2022-05-09 17:48:06.047 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=12
+2022-05-09 17:48:09.022 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=13
+2022-05-09 17:48:12.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=14
+2022-05-09 17:48:15.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=15
+2022-05-09 17:48:18.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=16
+2022-05-09 17:48:21.018 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=17
+2022-05-09 17:48:24.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=18
+2022-05-09 17:48:27.015 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=19
+2022-05-09 17:49:31.793 - [WARN ] [org.mybatis.spring.mapper.ClassPathMapperScanner : 44] - No MyBatis mapper was found in '[com.jr]' package. Please check your configuration.
+2022-05-09 17:50:02.287 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=46
+2022-05-09 17:50:02.287 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=47
+2022-05-09 17:50:02.287 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=48
+2022-05-09 17:50:02.287 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=45
+2022-05-09 17:50:03.020 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=49
+2022-05-09 17:50:06.035 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=50
+2022-05-09 17:50:09.085 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=51
+2022-05-09 17:50:12.021 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=52
+2022-05-09 17:50:15.033 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=53
+2022-05-09 17:50:18.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=54
+2022-05-09 17:50:21.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=55
+2022-05-09 17:50:24.014 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=56
+2022-05-09 17:50:27.014 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=57
+2022-05-09 17:50:30.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=58
+2022-05-09 17:50:33.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=59
+2022-05-09 17:50:36.014 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=60
+2022-05-09 17:50:39.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=61
+2022-05-09 17:50:44.009 - [ERROR] [org.quartz.core.ErrorLogger : 2407] - An error occurred while firing triggers '[Trigger 'DEFAULT.PrintLogJob':  triggerClass: 'org.quartz.impl.triggers.CronTriggerImpl calendar: 'null' misfireInstruction: 0 nextFireTime: Mon May 09 17:50:42 CST 2022]'
+org.quartz.impl.jdbcjobstore.LockException: Failure obtaining db row lock: Table 'myscheduler.qrtz_locks' doesn't exist
+	at org.quartz.impl.jdbcjobstore.StdRowLockSemaphore.executeSQL(StdRowLockSemaphore.java:184)
+	at org.quartz.impl.jdbcjobstore.DBSemaphore.obtainLock(DBSemaphore.java:113)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3857)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.triggersFired(JobStoreSupport.java:2977)
+	at org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:353)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'myscheduler.qrtz_locks' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1003)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.executeQuery(DruidPooledPreparedStatement.java:228)
+	at org.quartz.impl.jdbcjobstore.StdRowLockSemaphore.executeSQL(StdRowLockSemaphore.java:123)
+	... 4 common frames omitted
+2022-05-09 17:51:26.966 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=66
+2022-05-09 17:51:27.058 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=67
+2022-05-09 17:51:27.080 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=68
+2022-05-09 17:51:30.028 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=69
+2022-05-09 17:51:33.014 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=70
+2022-05-09 17:51:36.015 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=71
+2022-05-09 17:51:39.007 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=72
+2022-05-09 17:51:42.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=73
+2022-05-09 17:51:45.050 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=74
+2022-05-09 17:51:48.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=75
+2022-05-09 17:51:51.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=76
+2022-05-09 17:51:54.027 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=77
+2022-05-09 17:51:57.016 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=78
+2022-05-09 17:52:03.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=79
+2022-05-09 17:52:06.014 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=80
+2022-05-09 17:52:09.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=81
+2022-05-09 17:52:12.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=82
+2022-05-09 17:52:15.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=83
+2022-05-09 17:52:18.023 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=84
+2022-05-09 17:52:21.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=85
+2022-05-09 17:52:24.022 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=86
+2022-05-09 17:52:27.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=87
+2022-05-09 17:52:30.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=88
+2022-05-09 17:52:33.034 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=89
+2022-05-09 17:52:36.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=90
+2022-05-09 17:52:39.017 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=91
+2022-05-09 17:52:42.046 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=92
+2022-05-09 17:52:45.022 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=93
+2022-05-09 17:52:48.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=94
+2022-05-09 17:52:51.019 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=95
+2022-05-09 17:52:54.173 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=96
+2022-05-09 17:52:57.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=97
+2022-05-09 17:53:03.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=98
+2022-05-09 17:53:06.007 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=99
+2022-05-09 17:53:09.023 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=100
+2022-05-09 17:53:12.015 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=101
+2022-05-09 17:53:15.006 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=102
+2022-05-09 17:53:18.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=103
+2022-05-09 17:53:21.007 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=104
+2022-05-09 17:53:24.018 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=105
+2022-05-09 17:53:27.014 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=106
+2022-05-09 17:53:30.090 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=107
+2022-05-09 17:53:33.067 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=108
+2022-05-09 17:53:36.326 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=109
+2022-05-09 17:53:39.075 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=110
+2022-05-09 17:53:42.069 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=111
+2022-05-09 17:53:45.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=112
+2022-05-09 17:53:48.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=113
+2022-05-09 17:53:51.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=1
+2022-05-09 17:53:54.016 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=2
+2022-05-09 17:53:57.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=3
+2022-05-09 17:55:02.696 - [WARN ] [org.mybatis.spring.mapper.ClassPathMapperScanner : 44] - No MyBatis mapper was found in '[com.jr]' package. Please check your configuration.
+2022-05-09 17:55:10.539 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=6
+2022-05-09 17:55:10.539 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=2
+2022-05-09 17:55:10.540 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=4
+2022-05-09 17:55:10.540 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=3
+2022-05-09 17:55:10.541 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=7
+2022-05-09 17:55:10.540 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=5
+2022-05-09 17:55:10.542 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=1
+2022-05-09 17:55:10.549 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=8
+2022-05-09 17:55:10.566 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=9
+2022-05-09 17:55:10.571 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=10
+2022-05-09 17:55:10.593 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=11
+2022-05-09 17:55:10.614 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=12
+2022-05-09 17:55:10.631 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=13
+2022-05-09 17:55:10.654 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=14
+2022-05-09 17:55:10.679 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=15
+2022-05-09 17:55:12.043 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=16
+2022-05-09 17:55:15.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=17
+2022-05-09 17:57:38.288 - [WARN ] [org.mybatis.spring.mapper.ClassPathMapperScanner : 44] - No MyBatis mapper was found in '[com.jr]' package. Please check your configuration.
+2022-05-09 17:57:45.470 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=50
+2022-05-09 17:57:45.470 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=52
+2022-05-09 17:57:45.470 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=51
+2022-05-09 17:57:45.470 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=53
+2022-05-09 17:57:46.023 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=54
+2022-05-09 17:57:47.032 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=1
+2022-05-09 17:57:48.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=2
+2022-05-09 17:57:49.036 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=3
+2022-05-09 17:57:50.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=4
+2022-05-09 17:57:51.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=5
+2022-05-09 17:57:52.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=6
+2022-05-09 17:57:53.014 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=7
+2022-05-09 17:57:54.025 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=8
+2022-05-09 17:57:55.039 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=9
+2022-05-09 17:57:56.026 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=10
+2022-05-09 17:57:57.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=11
+2022-05-09 17:57:58.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=12
+2022-05-09 17:57:59.014 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=13
+2022-05-09 17:58:01.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=14
+2022-05-09 17:58:02.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=15
+2022-05-09 17:58:03.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=16
+2022-05-09 17:58:04.020 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=17
+2022-05-09 17:58:05.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=18
+2022-05-09 17:58:06.017 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=19
+2022-05-09 17:58:07.014 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=20
+2022-05-09 17:58:08.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=21
+2022-05-09 17:58:09.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=22
+2022-05-09 17:58:10.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=23
+2022-05-09 17:58:11.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=24
+2022-05-09 17:59:14.651 - [WARN ] [org.mybatis.spring.mapper.ClassPathMapperScanner : 44] - No MyBatis mapper was found in '[com.jr]' package. Please check your configuration.
+2022-05-09 17:59:20.125 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=1
+2022-05-09 17:59:20.126 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=2
+2022-05-09 17:59:20.126 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=3
+2022-05-09 17:59:20.129 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=4
+2022-05-09 17:59:20.129 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=5
+2022-05-09 17:59:20.130 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=6
+2022-05-09 17:59:20.138 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=7
+2022-05-09 17:59:20.144 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=8
+2022-05-09 17:59:20.148 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=9
+2022-05-09 17:59:20.160 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=10
+2022-05-09 17:59:20.174 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=11
+2022-05-09 17:59:20.187 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=12
+2022-05-09 17:59:20.202 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=13
+2022-05-09 17:59:20.214 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=14
+2022-05-09 17:59:20.226 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=15
+2022-05-09 17:59:20.239 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=16
+2022-05-09 17:59:20.251 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=17
+2022-05-09 17:59:20.263 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=18
+2022-05-09 17:59:20.275 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=19
+2022-05-09 17:59:20.293 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=20
+2022-05-09 17:59:20.301 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=21
+2022-05-09 17:59:20.314 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=22
+2022-05-09 17:59:20.331 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=23
+2022-05-09 17:59:20.344 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=24
+2022-05-09 17:59:20.356 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=25
+2022-05-09 17:59:20.371 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=26
+2022-05-09 17:59:20.383 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=27
+2022-05-09 17:59:20.394 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=28
+2022-05-09 17:59:20.407 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=29
+2022-05-09 17:59:20.418 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=30
+2022-05-09 17:59:20.433 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=31
+2022-05-09 17:59:20.448 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=32
+2022-05-09 17:59:20.462 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=33
+2022-05-09 17:59:20.470 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=34
+2022-05-09 17:59:20.484 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=35
+2022-05-09 17:59:20.496 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=36
+2022-05-09 17:59:20.508 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=37
+2022-05-09 17:59:20.527 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=38
+2022-05-09 17:59:20.550 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=39
+2022-05-09 17:59:20.566 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=40
+2022-05-09 17:59:20.578 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=41
+2022-05-09 17:59:20.594 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=42
+2022-05-09 17:59:20.607 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=43
+2022-05-09 17:59:20.635 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=44
+2022-05-09 17:59:20.636 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=45
+2022-05-09 17:59:20.646 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=46
+2022-05-09 17:59:21.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=47
+2022-05-09 17:59:22.056 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=48
+2022-05-09 17:59:23.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=49
+2022-05-09 17:59:24.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=50
+2022-05-09 17:59:25.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=51
+2022-05-09 17:59:26.015 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=52
+2022-05-09 17:59:27.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=53
+2022-05-09 17:59:28.022 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=54
+2022-05-09 17:59:29.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=55
+2022-05-09 17:59:30.019 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=56
+2022-05-09 17:59:31.016 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=57
+2022-05-09 17:59:32.018 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=58
+2022-05-09 17:59:33.017 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=59
+2022-05-09 17:59:34.014 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=60
+2022-05-09 17:59:35.018 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=61
+2022-05-09 17:59:36.021 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=62
+2022-05-09 17:59:37.024 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=63
+2022-05-09 17:59:38.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=64
+2022-05-09 17:59:39.007 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=65
+2022-05-09 17:59:40.072 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=66
+2022-05-09 17:59:41.066 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=67
+2022-05-09 17:59:42.061 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=68
+2022-05-09 17:59:43.064 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=69
+2022-05-09 17:59:44.097 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=70
+2022-05-09 17:59:45.035 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=71
+2022-05-09 18:01:53.369 - [WARN ] [org.mybatis.spring.mapper.ClassPathMapperScanner : 44] - No MyBatis mapper was found in '[com.jr]' package. Please check your configuration.
+2022-05-09 18:01:57.981 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=72
+2022-05-09 18:01:58.020 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=73
+2022-05-09 18:02:02.040 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=74
+2022-05-09 18:02:04.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=75
+2022-05-09 18:02:06.015 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=76
+2022-05-09 18:02:08.018 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=77
+2022-05-09 18:02:10.017 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=1
+2022-05-09 18:03:27.497 - [WARN ] [org.mybatis.spring.mapper.ClassPathMapperScanner : 44] - No MyBatis mapper was found in '[com.jr]' package. Please check your configuration.
+2022-05-09 18:03:31.640 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=30
+2022-05-09 18:03:31.640 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=29
+2022-05-09 18:03:32.021 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=31
+2022-05-09 18:03:33.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=32
+2022-05-09 18:03:34.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=33
+2022-05-09 18:03:35.019 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=34
+2022-05-09 18:03:36.035 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=35
+2022-05-09 18:03:37.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=36
+2022-05-09 18:03:38.014 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=37
+2022-05-09 18:03:39.014 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=38
+2022-05-09 18:03:40.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=39
+2022-05-09 18:03:41.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=40
+2022-05-09 18:03:42.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=41
+2022-05-09 18:03:43.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=42
+2022-05-09 18:03:44.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=43
+2022-05-09 18:03:45.024 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=44
+2022-05-09 18:03:46.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=45
+2022-05-09 18:03:47.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=46
+2022-05-09 18:03:48.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=47
+2022-05-09 18:03:49.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=48
+2022-05-09 18:03:50.015 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=49
+2022-05-09 18:03:51.022 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=50
+2022-05-09 18:03:52.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=51
+2022-05-09 18:03:53.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=52
+2022-05-09 18:03:54.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=53
+2022-05-09 18:03:55.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=54
+2022-05-09 18:03:56.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=55
+2022-05-09 18:03:57.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=56
+2022-05-09 18:03:58.014 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=57
+2022-05-09 18:03:59.021 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=58
+2022-05-09 18:04:01.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=59
+2022-05-09 18:04:02.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=60
+2022-05-09 18:04:03.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=61
+2022-05-09 18:04:04.015 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=62
+2022-05-09 18:04:05.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=63
+2022-05-09 18:04:06.023 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=64
+2022-05-09 18:04:07.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=65
+2022-05-09 18:04:08.007 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=66
+2022-05-09 18:04:09.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=67
+2022-05-09 18:04:10.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=68
+2022-05-09 18:04:11.027 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=69
+2022-05-09 18:04:12.100 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=70
+2022-05-09 18:04:13.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=71
+2022-05-09 18:04:14.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=72
+2022-05-09 18:04:15.100 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=73
+2022-05-09 18:04:16.104 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=74
+2022-05-09 18:04:17.061 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=75
+2022-05-09 18:04:18.085 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=76
+2022-05-09 18:04:19.038 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=77
+2022-05-09 18:04:20.088 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=78
+2022-05-09 18:04:21.126 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=79
+2022-05-09 18:04:22.185 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=80
+2022-05-09 18:04:23.189 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=81
+2022-05-09 18:04:24.021 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=82
+2022-05-09 18:04:25.106 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=83
+2022-05-09 18:04:26.044 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=84
+2022-05-09 18:04:27.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=85
+2022-05-09 18:04:28.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=86
+2022-05-09 18:04:29.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=87
+2022-05-09 18:04:30.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=88
+2022-05-09 18:04:31.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=89
+2022-05-09 18:04:32.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=90
+2022-05-09 18:04:33.019 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=91
+2022-05-09 18:04:34.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=92
+2022-05-09 18:04:35.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=93
+2022-05-09 18:04:36.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=94
+2022-05-09 18:04:37.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=95
+2022-05-09 18:05:30.082 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=110
+2022-05-09 18:05:30.104 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=111
+2022-05-09 18:05:30.105 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=112
+2022-05-09 18:05:33.017 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=113
+2022-05-09 18:05:36.007 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=114
+2022-05-09 18:05:39.023 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=115
+2022-05-09 18:05:42.019 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=116
+2022-05-09 18:05:45.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=117
+2022-05-09 18:05:48.007 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=118
+2022-05-09 18:05:51.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=119
+2022-05-09 18:05:54.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=120
+2022-05-09 18:05:57.018 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=121
+2022-05-09 18:06:03.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=122
+2022-05-09 18:06:06.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=123
+2022-05-09 18:06:09.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=124
+2022-05-09 18:07:13.716 - [WARN ] [org.mybatis.spring.mapper.ClassPathMapperScanner : 44] - No MyBatis mapper was found in '[com.jr]' package. Please check your configuration.
+2022-05-09 18:07:17.594 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=2
+2022-05-09 18:07:17.594 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=1
+2022-05-09 18:07:18.018 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=3
+2022-05-09 18:07:19.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=4
+2022-05-09 18:07:20.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=5
+2022-05-09 18:07:21.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=6
+2022-05-09 18:07:22.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=7
+2022-05-09 18:07:23.031 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=8
+2022-05-09 18:07:24.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=9
+2022-05-09 18:07:25.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=10
+2022-05-09 18:07:26.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=11
+2022-05-09 18:07:27.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=12
+2022-05-09 18:07:28.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=13
+2022-05-09 18:07:29.021 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=14
+2022-05-09 18:07:30.025 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=15
+2022-05-09 18:07:31.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=16
+2022-05-09 18:07:32.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=17
+2022-05-09 18:07:33.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=18
+2022-05-09 18:07:34.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=19
+2022-05-09 18:07:35.014 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=20
+2022-05-09 18:07:36.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=21
+2022-05-09 18:07:37.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=22
+2022-05-09 18:07:38.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=23
+2022-05-09 18:07:39.078 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=24
+2022-05-09 18:07:40.018 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=25
+2022-05-09 18:07:41.016 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=26
+2022-05-09 18:07:42.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=27
+2022-05-09 18:07:43.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=28
+2022-05-09 18:07:44.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=29
+2022-05-09 18:07:45.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=30
+2022-05-09 18:07:46.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=31
+2022-05-09 18:07:47.029 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=32
+2022-05-09 18:07:48.038 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=33
+2022-05-09 18:07:51.019 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=34
+2022-05-09 18:07:54.017 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=35
+2022-05-09 18:07:57.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=36
+2022-05-09 18:08:03.007 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=37
+2022-05-09 18:08:06.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=38
+2022-05-09 18:08:09.014 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=39
+2022-05-09 18:08:12.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=40
+2022-05-09 18:08:15.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=41
+2022-05-09 18:08:18.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=42
+2022-05-09 18:08:21.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=43
+2022-05-09 18:08:24.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=44
+2022-05-09 18:08:27.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=45
+2022-05-09 18:08:30.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=46
+2022-05-09 18:08:33.050 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=47
+2022-05-09 18:08:36.007 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=48
+2022-05-09 18:08:39.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=49
+2022-05-09 18:08:42.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=50
+2022-05-09 18:08:45.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=51
+2022-05-09 18:08:48.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=52
+2022-05-09 18:08:51.007 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=53
+2022-05-09 18:08:54.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=54
+2022-05-09 18:08:57.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=55
+2022-05-09 18:17:43.630 - [WARN ] [org.mybatis.spring.mapper.ClassPathMapperScanner : 44] - No MyBatis mapper was found in '[com.jr]' package. Please check your configuration.
+2022-05-09 18:17:49.668 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=1
+2022-05-09 18:17:49.668 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=2
+2022-05-09 18:17:50.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=3
+2022-05-09 18:17:51.017 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=4
+2022-05-09 18:17:52.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=5
+2022-05-09 18:17:53.016 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=6
+2022-05-09 18:17:54.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=7
+2022-05-09 18:17:55.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=8
+2022-05-09 18:17:56.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=9
+2022-05-09 18:17:57.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=10
+2022-05-09 18:17:58.017 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=11
+2022-05-09 18:17:59.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=12
+2022-05-09 18:18:01.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=13
+2022-05-09 18:18:02.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=14
+2022-05-09 18:18:03.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=15
+2022-05-09 18:18:04.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=16
+2022-05-09 18:18:05.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=17
+2022-05-09 18:18:06.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=18
+2022-05-09 18:18:07.022 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=19
+2022-05-09 18:18:08.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=20
+2022-05-09 18:18:09.021 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=21
+2022-05-09 18:18:10.014 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=22
+2022-05-09 18:18:11.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=23
+2022-05-09 18:18:12.015 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=24
+2022-05-09 18:18:13.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=25
+2022-05-09 18:18:14.014 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=26
+2022-05-09 18:18:15.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=27
+2022-05-09 18:18:16.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=28
+2022-05-09 18:18:17.041 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=29
+2022-05-09 18:18:18.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=30
+2022-05-09 18:18:19.084 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=31
+2022-05-09 18:18:20.050 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=32
+2022-05-09 18:18:21.033 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=33
+2022-05-09 18:18:22.107 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=34
+2022-05-09 18:18:23.496 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=35
+2022-05-09 18:18:24.360 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=36
+2022-05-09 18:18:25.055 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=37
+2022-05-09 18:18:26.614 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=38
+2022-05-09 18:18:28.965 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=39
+2022-05-09 18:18:31.259 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=40
+2022-05-09 18:18:31.316 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=41
+2022-05-09 18:18:31.339 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=42
+2022-05-09 18:18:31.355 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=43
+2022-05-09 18:18:32.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=44
+2022-05-09 18:18:36.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=46
+2022-05-09 18:18:39.034 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=47
+2022-05-09 18:18:42.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=48
+2022-05-09 18:18:45.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=49
+2022-05-09 18:18:48.025 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=50
+2022-05-09 18:18:51.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=51
+2022-05-09 18:18:54.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=52
+2022-05-09 18:18:57.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=53
+2022-05-09 18:19:03.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=54
+2022-05-09 18:19:06.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=55
+2022-05-09 18:19:09.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=56
+2022-05-09 18:19:12.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=57
+2022-05-09 18:19:15.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=58
+2022-05-09 18:19:18.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=59
+2022-05-09 18:19:21.021 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=60
+2022-05-09 18:19:24.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=61
+2022-05-09 18:19:27.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=62
+2022-05-09 18:19:30.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=63
+2022-05-09 18:19:33.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=64
+2022-05-09 18:19:36.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=65
+2022-05-09 18:19:39.016 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=66
+2022-05-09 18:19:42.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=67
+2022-05-09 18:19:45.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=68
+2022-05-09 18:19:48.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=69
+2022-05-09 18:19:51.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=70
+2022-05-09 18:19:54.007 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=71
+2022-05-09 18:19:57.055 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=72
+2022-05-09 18:20:03.605 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=73
+2022-05-09 18:20:06.105 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=74
+2022-05-09 18:20:09.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=75
+2022-05-09 18:20:12.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=76
+2022-05-09 18:20:15.065 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=77
+2022-05-09 18:21:59.056 - [WARN ] [org.mybatis.spring.mapper.ClassPathMapperScanner : 44] - No MyBatis mapper was found in '[com.jr]' package. Please check your configuration.
+2022-05-09 18:22:04.242 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=112
+2022-05-09 18:22:04.242 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=114
+2022-05-09 18:22:04.242 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=113
+2022-05-09 18:22:05.019 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=115
+2022-05-09 18:22:06.018 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=116
+2022-05-09 18:22:07.015 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=117
+2022-05-09 18:22:08.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=118
+2022-05-09 18:22:09.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=119
+2022-05-09 18:22:10.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=120
+2022-05-09 18:22:11.018 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=121
+2022-05-09 18:22:12.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=122
+2022-05-09 18:22:13.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=123
+2022-05-09 18:22:14.015 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=124
+2022-05-09 18:22:15.035 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=125
+2022-05-09 18:22:16.019 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=126
+2022-05-09 18:22:17.023 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=127
+2022-05-09 18:22:18.014 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=128
+2022-05-09 18:22:19.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=129
+2022-05-09 18:22:20.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=130
+2022-05-09 18:22:21.017 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=131
+2022-05-09 18:22:22.024 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=132
+2022-05-09 18:22:23.025 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=133
+2022-05-09 18:22:24.014 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=134
+2022-05-09 18:22:25.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=135
+2022-05-09 18:22:26.021 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=136
+2022-05-09 18:22:27.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=137
+2022-05-09 18:22:28.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=138
+2022-05-09 18:22:29.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=139
+2022-05-09 18:22:30.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=140
+2022-05-09 18:22:31.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=141
+2022-05-09 18:22:32.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=142
+2022-05-09 18:22:33.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=143
+2022-05-09 18:22:34.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=144
+2022-05-09 18:22:35.014 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=145
+2022-05-09 18:22:36.016 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=146
+2022-05-09 18:22:37.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=147
+2022-05-09 18:22:38.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=148
+2022-05-09 18:22:39.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=149
+2022-05-09 18:22:40.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=150
+2022-05-09 18:22:41.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=151
+2022-05-09 18:22:42.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=152
+2022-05-09 18:22:43.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=153
+2022-05-09 18:22:44.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=154
+2022-05-09 18:22:45.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=155
+2022-05-09 18:22:46.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=156
+2022-05-09 18:22:47.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=157
+2022-05-09 18:22:48.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=158
+2022-05-09 18:22:49.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=159
+2022-05-09 18:22:50.015 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=160
+2022-05-09 18:22:51.022 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=161
+2022-05-09 18:22:52.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=162
+2022-05-09 18:22:53.036 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=163
+2022-05-09 18:22:54.016 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=164
+2022-05-09 18:22:55.007 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=165
+2022-05-09 18:22:56.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=166
+2022-05-09 18:22:57.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=167
+2022-05-09 18:22:58.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=168
+2022-05-09 18:22:59.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=169
+2022-05-09 18:23:01.021 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=170
+2022-05-09 18:23:02.007 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=171
+2022-05-09 18:23:03.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=172
+2022-05-09 18:23:04.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=173
+2022-05-09 18:23:05.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=174
+2022-05-09 18:23:06.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=175
+2022-05-09 18:23:07.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=176
+2022-05-09 18:23:08.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=177
+2022-05-09 18:23:09.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=178
+2022-05-09 18:23:10.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=179
+2022-05-09 18:23:11.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=180
+2022-05-09 18:23:12.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=181
+2022-05-09 18:23:13.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=182
+2022-05-09 18:23:14.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=183
+2022-05-09 18:23:15.016 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=184
+2022-05-09 18:23:16.016 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=185
+2022-05-09 18:23:17.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=186
+2022-05-09 18:23:18.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=187
+2022-05-09 18:23:19.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=188
+2022-05-09 18:23:20.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=189
+2022-05-09 18:23:21.020 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=190
+2022-05-09 18:23:22.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=191
+2022-05-09 18:23:23.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=192
+2022-05-09 18:23:24.020 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=193
+2022-05-09 18:23:25.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=194
+2022-05-09 18:23:26.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=195
+2022-05-09 18:23:27.067 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=196
+2022-05-09 18:23:28.028 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=197
+2022-05-09 18:23:29.006 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=198
+2022-05-09 18:23:30.025 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=199
+2022-05-09 18:23:31.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=200
+2022-05-09 18:23:32.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=201
+2022-05-09 18:23:33.019 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=202
+2022-05-09 18:23:34.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=203
+2022-05-09 18:23:35.018 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=204
+2022-05-09 18:23:36.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=205
+2022-05-09 18:23:37.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=206
+2022-05-09 18:23:38.019 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=207
+2022-05-09 18:23:39.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=208
+2022-05-09 18:23:40.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=209
+2022-05-09 18:23:41.016 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=210
+2022-05-09 18:23:42.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=211
+2022-05-09 18:23:43.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=212
+2022-05-09 18:23:44.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=213
+2022-05-09 18:23:45.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=214
+2022-05-09 18:23:46.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=215
+2022-05-09 18:23:47.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=216
+2022-05-09 18:23:48.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=217
+2022-05-09 18:23:49.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=218
+2022-05-09 18:23:50.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=219
+2022-05-09 18:23:51.019 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=220
+2022-05-09 18:23:52.023 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=221
+2022-05-09 18:23:53.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=222
+2022-05-09 18:23:54.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=223
+2022-05-09 18:23:55.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=224
+2022-05-09 18:23:56.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=225
+2022-05-09 18:23:57.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=226
+2022-05-09 18:23:58.022 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=227
+2022-05-09 18:23:59.007 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=228
+2022-05-09 18:24:01.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=229
+2022-05-09 18:24:02.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=230
+2022-05-09 18:24:03.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=231
+2022-05-09 18:24:04.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=232
+2022-05-09 18:24:05.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=233
+2022-05-09 18:24:06.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=234
+2022-05-09 18:24:07.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=235
+2022-05-09 18:24:08.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=236
+2022-05-09 18:24:09.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=237
+2022-05-09 18:24:10.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=238
+2022-05-09 18:24:11.030 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=239
+2022-05-09 18:24:12.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=240
+2022-05-09 18:24:13.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=241
+2022-05-09 18:24:14.021 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=242
+2022-05-09 18:24:15.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=243
+2022-05-09 18:24:16.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=244
+2022-05-09 18:24:17.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=245
+2022-05-09 18:24:18.022 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=246
+2022-05-09 18:24:19.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=247
+2022-05-09 18:24:20.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=248
+2022-05-09 18:24:21.026 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=249
+2022-05-09 18:24:22.007 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=250
+2022-05-09 18:24:23.007 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=251
+2022-05-09 18:24:24.017 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=252
+2022-05-09 18:24:25.016 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=253
+2022-05-09 18:24:26.007 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=254
+2022-05-09 18:24:27.014 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=255
+2022-05-09 18:24:28.034 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=256
+2022-05-09 18:24:29.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=257
+2022-05-09 18:24:30.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=258
+2022-05-09 18:24:31.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=259
+2022-05-09 18:24:32.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=260
+2022-05-09 18:24:33.047 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=261
+2022-05-09 18:24:34.017 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=262
+2022-05-09 18:24:35.021 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=263
+2022-05-09 18:24:36.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=264
+2022-05-09 18:24:37.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=265
+2022-05-09 18:24:38.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=266
+2022-05-09 18:24:39.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=267
+2022-05-09 18:24:40.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=268
+2022-05-09 18:24:41.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=269
+2022-05-09 18:24:42.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=270
+2022-05-09 18:24:43.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=271
+2022-05-09 18:24:44.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=272
+2022-05-09 18:24:45.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=273
+2022-05-09 18:24:46.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=274
+2022-05-09 18:24:47.007 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=275
+2022-05-09 18:24:48.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=276
+2022-05-09 18:24:49.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=277
+2022-05-09 18:24:50.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=278
+2022-05-09 18:24:51.015 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=279
+2022-05-09 18:24:52.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=280
+2022-05-09 18:24:53.014 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=281
+2022-05-09 18:24:54.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=282
+2022-05-09 18:24:55.007 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=283
+2022-05-09 18:24:56.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=284
+2022-05-09 18:24:57.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=285
+2022-05-09 18:24:58.006 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=286
+2022-05-09 18:24:59.017 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=287
+2022-05-09 18:25:01.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=288
+2022-05-09 18:25:02.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=289
+2022-05-09 18:25:03.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=290
+2022-05-09 18:25:04.006 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=291
+2022-05-09 18:25:05.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=292
+2022-05-09 18:25:06.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=293
+2022-05-09 18:25:07.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=294
+2022-05-09 18:25:08.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=295
+2022-05-09 18:25:09.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=296
+2022-05-09 18:25:10.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=297
+2022-05-09 18:25:11.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=298
+2022-05-09 18:25:12.007 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=299
+2022-05-09 18:25:13.036 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=300
+2022-05-09 18:25:14.021 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=301
+2022-05-09 18:25:15.023 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=302
+2022-05-09 18:25:16.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=303
+2022-05-09 18:25:17.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=304
+2022-05-09 18:25:18.017 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=305
+2022-05-09 18:25:19.015 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=306
+2022-05-09 18:25:20.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=307
+2022-05-09 18:25:21.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=308
+2022-05-09 18:25:22.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=309
+2022-05-09 18:25:23.015 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=310
+2022-05-09 18:25:24.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=311
+2022-05-09 18:25:25.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=312
+2022-05-09 18:25:26.007 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=313
+2022-05-09 18:25:27.007 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=314
+2022-05-09 18:25:28.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=315
+2022-05-09 18:25:29.015 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=316
+2022-05-09 18:25:30.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=317
+2022-05-09 18:25:31.007 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=318
+2022-05-09 18:25:32.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=319
+2022-05-09 18:25:33.021 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=320
+2022-05-09 18:25:34.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=321
+2022-05-09 18:25:35.007 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=322
+2022-05-09 18:25:36.007 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=323
+2022-05-09 18:25:37.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=324
+2022-05-09 18:25:38.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=325
+2022-05-09 18:25:39.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=326
+2022-05-09 18:25:40.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=327
+2022-05-09 18:25:41.007 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=328
+2022-05-09 18:25:42.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=329
+2022-05-09 18:25:43.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=330
+2022-05-09 18:25:44.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=331
+2022-05-09 18:25:45.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=332
+2022-05-09 18:25:46.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=333
+2022-05-09 18:25:47.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=334
+2022-05-09 18:25:48.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=335
+2022-05-09 18:25:49.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=336
+2022-05-09 18:25:50.007 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=337
+2022-05-09 18:25:51.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=338
+2022-05-09 18:25:52.007 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=339
+2022-05-09 18:25:53.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=340
+2022-05-09 18:25:54.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=341
+2022-05-09 18:25:55.022 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=342
+2022-05-09 18:25:56.057 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=343
+2022-05-09 18:25:57.040 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=344
+2022-05-09 18:25:58.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=345
+2022-05-09 18:25:59.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=346
+2022-05-09 18:26:01.016 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=347
+2022-05-09 18:26:02.022 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=348
+2022-05-09 18:26:03.020 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=349
+2022-05-09 18:26:04.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=350
+2022-05-09 18:26:05.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=351
+2022-05-09 18:26:06.006 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=352
+2022-05-09 18:26:07.073 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=353
+2022-05-09 18:26:08.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=354
+2022-05-09 18:26:09.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=355
+2022-05-09 18:26:10.020 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=356
+2022-05-09 18:26:11.020 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=357
+2022-05-09 18:26:12.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=358
+2022-05-09 18:26:13.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=359
+2022-05-09 18:26:14.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=360
+2022-05-09 18:26:15.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=361
+2022-05-09 18:26:16.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=362
+2022-05-09 18:26:17.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=363
+2022-05-09 18:26:18.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=364
+2022-05-09 18:26:19.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=365
+2022-05-09 18:26:20.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=366
+2022-05-09 18:26:21.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=367
+2022-05-09 18:26:22.020 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=368
+2022-05-09 18:26:23.007 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=369
+2022-05-09 18:26:24.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=370
+2022-05-09 18:26:25.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=371
+2022-05-09 18:26:26.018 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=372
+2022-05-09 18:26:27.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=373
+2022-05-09 18:26:28.007 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=374
+2022-05-09 18:26:29.007 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=375
+2022-05-09 18:26:30.032 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=376
+2022-05-09 18:26:31.050 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=377
+2022-05-09 18:26:32.007 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=378
+2022-05-09 18:26:33.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=379
+2022-05-09 18:26:34.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=380
+2022-05-09 18:26:35.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=381
+2022-05-09 18:26:36.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=382
+2022-05-09 18:26:37.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=383
+2022-05-09 18:26:38.007 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=384
+2022-05-09 18:26:39.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=385
+2022-05-09 18:26:40.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=386
+2022-05-09 18:26:41.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=387
+2022-05-09 18:26:42.016 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=388
+2022-05-09 18:26:43.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=389
+2022-05-09 18:26:44.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=390
+2022-05-09 18:26:45.018 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=391
+2022-05-09 18:26:46.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=392
+2022-05-09 18:26:47.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=393
+2022-05-09 18:26:48.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=394
+2022-05-09 18:26:49.007 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=395
+2022-05-09 18:26:50.019 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=396
+2022-05-09 18:26:51.006 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=397
+2022-05-09 18:26:52.007 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=398
+2022-05-09 18:26:53.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=399
+2022-05-09 18:26:54.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=400
+2022-05-09 18:26:55.014 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=401
+2022-05-09 18:26:56.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=402
+2022-05-09 18:26:57.035 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=403
+2022-05-09 18:26:58.137 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=404
+2022-05-09 18:26:59.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=405
+2022-05-09 18:27:01.016 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=406
+2022-05-09 18:27:02.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=407
+2022-05-09 18:27:03.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=408
+2022-05-09 18:27:04.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=409
+2022-05-09 18:27:05.006 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=410
+2022-05-09 18:27:06.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=411
+2022-05-09 18:27:07.006 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=412
+2022-05-09 18:27:08.006 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=413
+2022-05-09 18:27:09.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=414
+2022-05-09 18:27:10.017 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=415
+2022-05-09 18:27:11.007 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=416
+2022-05-09 18:27:12.019 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=417
+2022-05-09 18:27:13.021 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=418
+2022-05-09 18:27:14.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=419
+2022-05-09 18:27:15.108 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=420
+2022-05-09 18:27:16.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=421
+2022-05-09 18:27:17.019 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=422
+2022-05-09 18:27:18.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=423
+2022-05-09 18:27:19.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=424
+2022-05-09 18:27:20.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=425
+2022-05-09 18:27:21.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=426
+2022-05-09 18:27:22.026 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=427
+2022-05-09 18:27:23.064 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=428
+2022-05-09 18:27:24.069 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=429
+2022-05-09 18:27:25.392 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=430
+2022-05-09 18:27:26.394 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=431
+2022-05-09 18:27:27.737 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=432
+2022-05-09 18:27:28.756 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=433
+2022-05-09 18:27:29.512 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=434
+2022-05-09 18:27:30.078 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=435
+2022-05-09 18:27:31.098 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=436
+2022-05-09 18:27:32.006 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=437
+2022-05-09 18:27:33.016 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=438
+2022-05-09 18:27:34.026 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=439
+2022-05-09 18:27:35.006 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=440
+2022-05-09 18:27:36.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=441
+2022-05-09 18:27:37.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=442
+2022-05-09 18:27:38.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=443
+2022-05-09 18:27:39.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=444
+2022-05-09 18:27:40.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=445
+2022-05-09 18:27:41.116 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=446
+2022-05-09 18:27:42.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=447
+2022-05-09 18:27:43.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=448
+2022-05-09 18:27:44.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=449
+2022-05-09 18:27:45.166 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=450
+2022-05-09 18:27:46.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=451
+2022-05-09 18:27:47.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=452
+2022-05-09 18:27:48.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=453
+2022-05-09 18:27:49.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=454
+2022-05-09 18:27:50.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=455
+2022-05-09 18:27:51.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=456
+2022-05-09 18:27:52.017 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=457
+2022-05-09 18:27:53.007 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=458
+2022-05-09 18:27:54.034 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=459
+2022-05-09 18:27:55.030 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=460
+2022-05-09 18:27:56.007 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=461
+2022-05-09 18:27:57.066 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=462
+2022-05-09 18:27:58.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=463
+2022-05-09 18:27:59.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=464
+2022-05-09 18:28:01.007 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=465
+2022-05-09 18:28:02.034 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=466
+2022-05-09 18:28:03.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=467
+2022-05-09 18:28:04.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=468
+2022-05-09 18:28:05.036 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=469
+2022-05-09 18:28:06.017 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=470
+2022-05-09 18:28:07.006 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=471
+2022-05-09 18:28:08.007 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=472
+2022-05-09 18:28:09.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=473
+2022-05-09 18:28:10.015 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=474
+2022-05-09 18:28:39.813 - [WARN ] [org.mybatis.spring.mapper.ClassPathMapperScanner : 44] - No MyBatis mapper was found in '[com.jr]' package. Please check your configuration.
+2022-05-09 18:28:46.736 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=510
+2022-05-09 18:28:46.736 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=511
+2022-05-09 18:28:47.029 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=512
+2022-05-09 18:28:48.043 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=513
+2022-05-09 18:28:49.026 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=514
+2022-05-09 18:28:50.026 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=515
+2022-05-09 18:28:51.036 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=516
+2022-05-09 18:28:52.038 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=517
+2022-05-09 18:28:53.024 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=518
+2022-05-09 18:28:54.035 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=519
+2022-05-09 18:28:55.021 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=520
+2022-05-09 18:28:56.017 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=521
+2022-05-09 18:28:57.024 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=522
+2022-05-09 18:28:58.045 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=523
+2022-05-09 18:28:59.025 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=524
+2022-05-09 18:29:01.019 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=525
+2022-05-09 18:29:02.014 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=526
+2022-05-09 18:29:03.019 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=527
+2022-05-09 18:29:04.038 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=528
+2022-05-09 18:29:05.038 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=529
+2022-05-09 18:29:06.022 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=530
+2022-05-09 18:29:07.029 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=531
+2022-05-09 18:29:08.022 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=532
+2022-05-09 18:29:09.035 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=533
+2022-05-09 18:29:10.022 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=534
+2022-05-09 18:29:11.052 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=535
+2022-05-09 18:29:12.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=536
+2022-05-09 18:29:13.040 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=537
+2022-05-09 18:29:14.015 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=538
+2022-05-09 18:29:15.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=539
+2022-05-09 18:29:16.025 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=540
+2022-05-09 18:29:17.027 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=541
+2022-05-09 18:29:18.022 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=542
+2022-05-09 18:29:19.037 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=543
+2022-05-09 18:29:20.021 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=544
+2022-05-09 18:29:21.016 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=545
+2022-05-09 18:29:22.023 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=546
+2022-05-09 18:29:23.034 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=547
+2022-05-09 18:29:24.014 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=548
+2022-05-09 18:29:25.025 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=549
+2022-05-09 18:29:26.051 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=550
+2022-05-09 18:29:27.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=551
+2022-05-09 18:29:28.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=552
+2022-05-09 18:29:29.024 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=553
+2022-05-09 18:29:30.018 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=554
+2022-05-09 18:29:31.039 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=555
+2022-05-09 18:30:05.840 - [WARN ] [org.mybatis.spring.mapper.ClassPathMapperScanner : 44] - No MyBatis mapper was found in '[com.jr]' package. Please check your configuration.
+2022-05-09 18:30:12.488 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=594
+2022-05-09 18:30:12.488 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=595
+2022-05-09 18:30:12.489 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=593
+2022-05-09 18:30:12.488 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=596
+2022-05-09 18:30:12.490 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=597
+2022-05-09 18:30:13.022 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=598
+2022-05-09 18:30:14.023 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=599
+2022-05-09 18:30:15.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=600
+2022-05-09 18:30:16.016 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=601
+2022-05-09 18:30:17.015 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=602
+2022-05-09 18:30:18.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=603
+2022-05-09 18:30:19.024 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=604
+2022-05-09 18:30:20.016 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=605
+2022-05-09 18:30:21.018 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=606
+2022-05-09 18:30:22.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=607
+2022-05-09 18:30:23.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=608
+2022-05-09 18:30:24.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=609
+2022-05-09 18:30:25.022 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=610
+2022-05-09 18:30:26.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=611
+2022-05-09 18:30:27.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=612
+2022-05-09 18:30:28.051 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=613
+2022-05-09 18:30:29.014 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=614
+2022-05-09 18:30:30.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=615
+2022-05-09 18:30:31.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=616
+2022-05-09 18:30:32.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=617
+2022-05-09 18:30:33.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=618
+2022-05-09 18:30:34.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=619
+2022-05-09 18:30:35.023 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=620
+2022-05-09 18:30:36.016 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=621
+2022-05-09 18:30:37.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=622
+2022-05-09 18:30:38.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=623
+2022-05-09 18:30:39.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=624
+2022-05-09 18:30:40.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=625
+2022-05-09 18:30:41.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=626
+2022-05-09 18:30:42.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=627
+2022-05-09 18:30:43.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=628
+2022-05-09 18:30:44.016 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=629
+2022-05-09 18:30:45.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=630
+2022-05-09 18:30:46.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=631
+2022-05-09 18:30:47.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=632
+2022-05-09 18:31:19.279 - [WARN ] [org.mybatis.spring.mapper.ClassPathMapperScanner : 44] - No MyBatis mapper was found in '[com.jr]' package. Please check your configuration.
+2022-05-09 18:31:53.463 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=691
+2022-05-09 18:31:53.463 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=694
+2022-05-09 18:31:53.464 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=689
+2022-05-09 18:31:53.464 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=696
+2022-05-09 18:31:53.466 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=690
+2022-05-09 18:31:53.464 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=695
+2022-05-09 18:31:53.466 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=692
+2022-05-09 18:31:53.466 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=693
+2022-05-09 18:31:53.464 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=698
+2022-05-09 18:31:53.466 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=697
+2022-05-09 18:31:53.517 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=699
+2022-05-09 18:31:54.021 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=700
+2022-05-09 18:31:55.024 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=701
+2022-05-09 18:31:56.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=702
+2022-05-09 18:31:57.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=703
+2022-05-09 18:31:58.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=704
+2022-05-09 18:33:34.786 - [WARN ] [org.mybatis.spring.mapper.ClassPathMapperScanner : 44] - No MyBatis mapper was found in '[com.jr]' package. Please check your configuration.
+2022-05-09 18:33:40.562 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=705
+2022-05-09 18:33:40.562 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=706
+2022-05-09 18:33:40.562 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=707
+2022-05-09 18:33:41.023 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=708
+2022-05-09 18:33:42.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=709
+2022-05-09 18:33:43.016 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=710
+2022-05-09 18:33:44.028 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=711
+2022-05-09 18:33:45.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=712
+2022-05-09 18:33:46.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=713
+2022-05-09 18:33:47.029 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=714
+2022-05-09 18:33:48.029 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=715
+2022-05-09 18:33:49.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=716
+2022-05-09 18:33:50.024 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=717
+2022-05-09 18:33:51.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=718
+2022-05-09 18:33:52.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=719
+2022-05-09 18:33:53.016 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=720
+2022-05-09 18:33:54.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=721
+2022-05-09 18:33:55.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=722
+2022-05-09 18:33:56.023 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=723
+2022-05-09 18:33:57.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=724
+2022-05-09 18:33:58.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=725
+2022-05-09 18:33:59.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=726
+2022-05-09 18:34:01.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=727
+2022-05-09 18:34:02.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=728
+2022-05-09 18:34:03.012 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=729
+2022-05-09 18:34:04.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=730
+2022-05-09 18:34:05.038 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=731
+2022-05-09 18:34:06.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=732
+2022-05-09 18:34:07.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=733
+2022-05-09 18:34:08.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=734
+2022-05-09 18:34:09.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=735
+2022-05-09 18:34:10.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=736
+2022-05-09 18:34:11.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=737
+2022-05-09 18:34:12.022 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=738
+2022-05-09 18:34:13.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=739
+2022-05-09 18:34:14.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=740
+2022-05-09 18:34:15.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=741
+2022-05-09 18:34:16.015 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=742
+2022-05-09 18:34:17.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=743
+2022-05-09 18:34:18.009 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=744
+2022-05-09 18:34:19.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=745
+2022-05-09 18:34:20.035 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=746
+2022-05-09 18:34:21.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=747
+2022-05-09 18:34:22.020 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=748
+2022-05-09 18:34:23.011 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=749
+2022-05-09 18:34:24.027 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=750
+2022-05-09 18:34:25.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=751
+2022-05-09 18:34:26.010 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=752
+2022-05-09 18:34:27.008 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=753
+2022-05-09 18:34:28.022 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=754
+2022-05-09 18:34:29.007 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=755
+2022-05-09 18:34:30.063 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=756
+2022-05-09 18:34:31.340 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=757
+2022-05-09 18:34:32.054 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=758
+2022-05-09 18:34:33.068 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=759
+2022-05-09 18:34:34.075 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=760
+2022-05-09 18:34:35.013 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=761
+2022-05-09 18:34:36.024 - [WARN ] [com.jr.job.PrintLogJob : 30] - 【1】 printLog---【1】，id=762
+2022-05-09 18:35:04.252 - [WARN ] [org.mybatis.spring.mapper.ClassPathMapperScanner : 44] - No MyBatis mapper was found in '[com.jr]' package. Please check your configuration.
+2022-05-09 18:53:21.222 - [WARN ] [org.mybatis.spring.mapper.ClassPathMapperScanner : 44] - No MyBatis mapper was found in '[com.jr]' package. Please check your configuration.

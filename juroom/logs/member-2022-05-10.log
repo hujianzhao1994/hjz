@@ -1,0 +1,60 @@
+2022-05-10 14:47:45.846 - [INFO ] [com.jr.UserCoreApplication : 55] - Starting UserCoreApplication on hjz-office with PID 572 (D:\work_soft\IDEA_Tool\ideaPrj\JuluoPrj\juroom\juroom-user\userCore\target\classes started by hjz in D:\work_soft\IDEA_Tool\ideaPrj\JuluoPrj\juroom)
+2022-05-10 14:47:45.862 - [INFO ] [com.jr.UserCoreApplication : 655] - The following profiles are active: dev
+2022-05-10 14:47:50.442 - [WARN ] [org.mybatis.spring.mapper.ClassPathMapperScanner : 44] - No MyBatis mapper was found in '[com.jr]' package. Please check your configuration.
+2022-05-10 14:47:50.716 - [INFO ] [org.springframework.data.repository.config.RepositoryConfigurationDelegate : 249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-10 14:47:50.728 - [INFO ] [org.springframework.data.repository.config.RepositoryConfigurationDelegate : 127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-10 14:47:50.874 - [INFO ] [org.springframework.data.repository.config.RepositoryConfigurationDelegate : 187] - Finished Spring Data repository scanning in 76ms. Found 0 Redis repository interfaces.
+2022-05-10 14:47:52.757 - [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer : 108] - Tomcat initialized with port(s): 8081 (http)
+2022-05-10 14:47:52.800 - [INFO ] [org.apache.catalina.core.StandardService : 173] - Starting service [Tomcat]
+2022-05-10 14:47:52.801 - [INFO ] [org.apache.catalina.core.StandardEngine : 173] - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-05-10 14:47:53.467 - [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : 173] - Initializing Spring embedded WebApplicationContext
+2022-05-10 14:47:53.469 - [INFO ] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : 285] - Root WebApplicationContext: initialization completed in 7378 ms
+2022-05-10 14:47:54.647 - [INFO ] [com.alibaba.druid.pool.DruidDataSource : 930] - {dataSource-1} inited
+2022-05-10 14:47:59.760 - [INFO ] [org.quartz.impl.StdSchedulerFactory : 1220] - Using default implementation for ThreadExecutor
+2022-05-10 14:47:59.985 - [INFO ] [org.quartz.core.SchedulerSignalerImpl : 61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-05-10 14:47:59.986 - [INFO ] [org.quartz.core.QuartzScheduler : 229] - Quartz Scheduler v.2.3.2 created.
+2022-05-10 14:48:00.008 - [INFO ] [org.springframework.scheduling.quartz.LocalDataSourceJobStore : 672] - Using db table-based data access locking (synchronization).
+2022-05-10 14:48:00.011 - [INFO ] [org.springframework.scheduling.quartz.LocalDataSourceJobStore : 145] - JobStoreCMT initialized.
+2022-05-10 14:48:00.012 - [INFO ] [org.quartz.core.QuartzScheduler : 294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'YizhuScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is not clustered.
+
+2022-05-10 14:48:00.013 - [INFO ] [org.quartz.impl.StdSchedulerFactory : 1374] - Quartz scheduler 'YizhuScheduler' initialized from an externally provided properties instance.
+2022-05-10 14:48:00.013 - [INFO ] [org.quartz.impl.StdSchedulerFactory : 1378] - Quartz scheduler version: 2.3.2
+2022-05-10 14:48:00.013 - [INFO ] [org.quartz.core.QuartzScheduler : 2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@6fc1a8f6
+2022-05-10 14:48:00.223 - [INFO ] [org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler : 181] - Initializing ExecutorService 'taskScheduler'
+2022-05-10 14:48:02.351 - [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer : 220] - Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-10 14:48:02.353 - [INFO ] [org.springframework.scheduling.quartz.SchedulerFactoryBean : 727] - Starting Quartz Scheduler now
+2022-05-10 14:48:02.410 - [INFO ] [org.springframework.scheduling.quartz.LocalDataSourceJobStore : 866] - Freed 0 triggers from 'acquired' / 'blocked' state.
+2022-05-10 14:48:02.413 - [INFO ] [org.springframework.scheduling.quartz.LocalDataSourceJobStore : 876] - Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2022-05-10 14:48:02.414 - [INFO ] [org.springframework.scheduling.quartz.LocalDataSourceJobStore : 889] - Recovery complete.
+2022-05-10 14:48:02.415 - [INFO ] [org.springframework.scheduling.quartz.LocalDataSourceJobStore : 896] - Removed 0 'complete' triggers.
+2022-05-10 14:48:02.415 - [INFO ] [org.springframework.scheduling.quartz.LocalDataSourceJobStore : 901] - Removed 0 stale fired job entries.
+2022-05-10 14:48:02.417 - [INFO ] [org.quartz.core.QuartzScheduler : 547] - Scheduler YizhuScheduler_$_NON_CLUSTERED started.
+2022-05-10 14:48:03.973 - [INFO ] [com.jr.UserCoreApplication : 61] - Started UserCoreApplication in 19.543 seconds (JVM running for 22.486)
+2022-05-10 14:48:04.334 - [INFO ] [com.jr.job.PrintLogJob : 29] - COMPUTER NAME:【HJZ-OFFICE】,logTime:【2022-05-10T14:48:04.334】
+2022-05-10 14:48:04.335 - [INFO ] [com.jr.job.PrintLogJob : 29] - COMPUTER NAME:【HJZ-OFFICE】,logTime:【2022-05-10T14:48:04.335】
+2022-05-10 14:48:04.336 - [INFO ] [com.jr.job.PrintLogJob : 29] - COMPUTER NAME:【HJZ-OFFICE】,logTime:【2022-05-10T14:48:04.336】
+2022-05-10 14:48:04.339 - [INFO ] [com.jr.job.PrintLogJob : 29] - COMPUTER NAME:【HJZ-OFFICE】,logTime:【2022-05-10T14:48:04.339】
+2022-05-10 14:48:04.340 - [INFO ] [com.jr.job.PrintLogJob : 29] - COMPUTER NAME:【HJZ-OFFICE】,logTime:【2022-05-10T14:48:04.340】
+2022-05-10 14:48:04.344 - [INFO ] [com.jr.job.PrintLogJob : 29] - COMPUTER NAME:【HJZ-OFFICE】,logTime:【2022-05-10T14:48:04.344】
+2022-05-10 14:48:04.466 - [INFO ] [com.jr.job.PrintLogJob : 29] - COMPUTER NAME:【HJZ-OFFICE】,logTime:【2022-05-10T14:48:04.466】
+2022-05-10 14:48:04.480 - [INFO ] [com.jr.job.PrintLogJob : 29] - COMPUTER NAME:【HJZ-OFFICE】,logTime:【2022-05-10T14:48:04.480】
+2022-05-10 14:48:05.100 - [INFO ] [com.jr.job.PrintLogJob : 29] - COMPUTER NAME:【HJZ-OFFICE】,logTime:【2022-05-10T14:48:05.100】
+2022-05-10 14:48:06.019 - [INFO ] [com.jr.job.PrintLogJob : 29] - COMPUTER NAME:【HJZ-OFFICE】,logTime:【2022-05-10T14:48:06.019】
+2022-05-10 14:48:08.092 - [INFO ] [com.jr.job.PrintLogJob : 29] - COMPUTER NAME:【HJZ-OFFICE】,logTime:【2022-05-10T14:48:08.092】
+2022-05-10 14:48:08.106 - [INFO ] [com.jr.job.PrintLogJob : 29] - COMPUTER NAME:【HJZ-OFFICE】,logTime:【2022-05-10T14:48:08.106】
+2022-05-10 14:48:09.033 - [INFO ] [com.jr.job.PrintLogJob : 29] - COMPUTER NAME:【HJZ-OFFICE】,logTime:【2022-05-10T14:48:09.033】
+2022-05-10 14:48:10.021 - [INFO ] [com.jr.job.PrintLogJob : 29] - COMPUTER NAME:【HJZ-OFFICE】,logTime:【2022-05-10T14:48:10.020】
+2022-05-10 14:48:11.039 - [INFO ] [com.jr.job.PrintLogJob : 29] - COMPUTER NAME:【HJZ-OFFICE】,logTime:【2022-05-10T14:48:11.039】
+2022-05-10 14:48:11.256 - [INFO ] [org.quartz.core.QuartzScheduler : 585] - Scheduler YizhuScheduler_$_NON_CLUSTERED paused.
+2022-05-10 14:48:12.012 - [INFO ] [org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler : 218] - Shutting down ExecutorService 'taskScheduler'
+2022-05-10 14:48:12.013 - [INFO ] [org.springframework.scheduling.quartz.SchedulerFactoryBean : 845] - Shutting down Quartz Scheduler
+2022-05-10 14:48:12.013 - [INFO ] [org.quartz.core.QuartzScheduler : 666] - Scheduler YizhuScheduler_$_NON_CLUSTERED shutting down.
+2022-05-10 14:48:12.013 - [INFO ] [org.quartz.core.QuartzScheduler : 585] - Scheduler YizhuScheduler_$_NON_CLUSTERED paused.
+2022-05-10 14:48:12.014 - [INFO ] [org.quartz.core.QuartzScheduler : 740] - Scheduler YizhuScheduler_$_NON_CLUSTERED shutdown complete.
+2022-05-10 14:48:12.072 - [INFO ] [com.alibaba.druid.pool.DruidDataSource : 1825] - {dataSource-1} closed
