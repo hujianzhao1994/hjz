@@ -1,7 +1,10 @@
 package com.jr.entity;
 
+import com.alibaba.excel.annotation.ExcelProperty;
+import com.alibaba.excel.annotation.format.DateTimeFormat;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.jr.util.CustomStringStringConverter;
 import io.swagger.annotations.ApiModel;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -27,10 +30,17 @@ public class User implements Serializable {
 private static final long serialVersionUID=1L;
 
     @TableId(value = "id", type = IdType.AUTO)
+    @ExcelProperty(index = 0,value = "ID")
     private Integer id;
 
+    @ExcelProperty(index = 1,value = "姓名")
     private String name;
 
+    @ExcelProperty(index = 2,value ="性别",converter = CustomStringStringConverter.class)
+    private Integer sex;
+
+    @DateTimeFormat("yyyy-MM-dd")
+    @ExcelProperty(index = 3, value = "生日")
     private Date created;
 
 

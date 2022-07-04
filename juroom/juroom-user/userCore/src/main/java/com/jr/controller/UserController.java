@@ -3,7 +3,6 @@ package com.jr.controller;
 import com.alibaba.excel.EasyExcel;
 import com.jr.base.BaseController;
 import com.jr.entity.User;
-import com.jr.entity.UserData;
 import com.jr.service.IUserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +10,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.util.Date;
 import java.util.List;
 
@@ -44,16 +45,21 @@ public class UserController extends BaseController {
     }
 
 
+    /**
+     *      web 下载
+     * @param response
+     * @return
+     * @throws IOException
+     */
     @GetMapping("/getUser")
-    public Object getUser(){
+    public Object getUser(HttpServletResponse response) throws IOException {
+
+        response.setContentType("application/vnd.ms-excel");
+        response.setCharacterEncoding("utf-8");
+        response.setHeader("Content-disposition", "attachment;filename=demo.xlsx");
         List<User> list = iUserService.list();
-        // 实现excel写操作
-        //1.设置写入文件夹地址和excel文件名称
-        String fileName = "D:\\write.xlsx";
-        //调用easyExcel里面的方法实现写操作
-        //2个参数，第一个参数是文件名称，第二个参数是实体类
-        EasyExcel.write(fileName, UserData.class).sheet("学生信息表").doWrite(list);
-        return list;
+        EasyExcel.write(response.getOutputStream(), User.class).sheet("模板").doWrite(list);
+        return null;
     }
 
 }
