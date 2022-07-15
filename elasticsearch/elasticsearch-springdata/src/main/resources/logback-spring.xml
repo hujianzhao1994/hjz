@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration scan="true" scanPeriod="10 seconds">
+    <!--引入spring 默认对logback 的封装-->
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+    <!--两种取参数方式 取参方式1： 读取spring 配置文件中的参数值-->
+    <springProperty scope="context" name="appName" source="spring.application.name" defaultValue="admin"/>
+    <!--取参方式2-->
+    <!--<property name="appName" value="shop"/>-->
+    <property name="LOG_HOME" value="/usr/local/logs/admin"></property>
+    <property name="FILE_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} - [%-5level] [%logger{150} : %line] - %msg%n"></property>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder charset="UTF-8">
+            <!--日志输出格式：%d表示日期时间，%thread表示线程名，%-5level：级别从左显示5个字符宽度 %logger{50} 表示logger名字最长50个字符，否则按照句点分割。 %msg：日志消息，%n是换行符-->
+            <pattern>${CONSOLE_LOG_PATTERN}</pattern><!--使用 spring 中的 defaults.xml 获取 CONSOLE_LOG_PATTERN-->
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+    <!--自动按日期生成文件INFO 级别-->
+    <appender name="infoFileAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>info</level>
+        </filter>
+        <file>${LOG_HOME}/${appName}.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_HOME}/${appName}-%d{yyyy-MM-dd}.log</fileNamePattern>
+            <!--<maxFileSize>1000MB</maxFileSize>-->
+            <MaxHistory>365</MaxHistory>
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder" charset="UTF-8">
+            <pattern>${FILE_PATTERN}</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <!--自动按日期生成文件ERROR 级别-->
+    <!--<include resource="org/springframework/boot/logging/logback/file-appender.xml" />    -->
+    <appender name="errFileAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!--<Encoding>UTF-8</Encoding>-->
+        <file>${LOG_HOME}/${appName}-error.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_HOME}/${appName}-error-%d{yyyy-MM-dd}.log</fileNamePattern>
+            <!--<maxFileSize>1000MB</maxFileSize>-->
+            <MaxHistory>365</MaxHistory>
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder" charset="UTF-8">
+            <pattern>${FILE_PATTERN}</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>warn</level>
+        </filter>
+    </appender>
+    <appender name="logstash" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
+        <!--可以访问的logstash日志收集端口-->
+        <destination>127.0.0.1:9250</destination>
+        <encoder charset="UTF-8" class="net.logstash.logback.encoder.LogstashEncoder"/>
+        <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
+            <providers>
+                <timestamp>
+                    <timeZone>Asia/Shanghai</timeZone>
+                </timestamp>
+                <pattern>
+                        <pattern>
+                            {
+                                <!--应用名称 -->
+                                "appname":"${spring.application.name}",
+                                <!-- 日志级别 -->
+                                "level": "%level",
+                                <!--线程名称 -->
+                                "thread": "%thread",
+                                <!--日志对应类 -->
+                                "class": "%logger",
+                                <!--服务器ip -->
+<!--                                "host": "%ip",-->
+                                <!--应用端口 -->
+<!--                                "port": "${spring.application.index}",-->
+                                <!--日志信息 -->
+                                "message": "%message%n",
+                                <!--日志堆栈 -->
+                                "stack_trace": "%exception{full}"
+                            }
+                        </pattern>
+                </pattern>
+            </providers>
+        </encoder>
+    </appender>
+
+
+
+<!--    <appender name="logstash" class="net.logstash.logback.appender.LogstashTcpSocketAppender">-->
+<!--        <param name="Encoding" value="UTF-8"/>-->
+<!--        <remoteHost>127.0.0.1</remoteHost>-->
+<!--        <port>9250</port>-->
+<!--        &lt;!&ndash; <filter class="com.program.interceptor.ELKFilter"/>   引入过滤类 &ndash;&gt;-->
+<!--        &lt;!&ndash; encoder is required &ndash;&gt;-->
+<!--        <encoder charset="UTF-8" class="net.logstash.logback.encoder.LogstashEncoder" />-->
+<!--    </appender>-->
+
+    <!--    <appender name="email" class="ch.qos.logback.classic.net.SMTPAppender">-->
+    <!--        <smtpHost>smtp.vip.olivemail.net</smtpHost>-->
+    <!--        <smtpPort>25</smtpPort>-->
+    <!--        <username>jishubu@gooker.net</username>-->
+    <!--        <password>gooker2019</password>-->
+    <!--        <from>jishubu@gooker.net</from>-->
+    <!--        <to>hujianzhao@gooker.net</to>-->
+    <!--        <subject>系统报错日志</subject>-->
+    <!--        <asynchronousSending>true</asynchronousSending>-->
+    <!--        <layout class="ch.qos.logback.classic.PatternLayout">-->
+    <!--            <pattern>%date %X{ip}  %-5level %logger{35} - %message%n</pattern>-->
+    <!--        </layout>-->
+    <!--        &lt;!&ndash;https://logback.qos.ch/manual/filters.html#GEventEvaluator&ndash;&gt;-->
+    <!--        <cyclicBufferTracker class="ch.qos.logback.core.spi.CyclicBufferTracker">-->
+    <!--            &lt;!&ndash; 每个电子邮件只发一个日志条目 &ndash;&gt;-->
+    <!--            <bufferSize>2</bufferSize>-->
+    <!--        </cyclicBufferTracker>-->
+    <!--    </appender>-->
+
+    <!--配置 mybatis-plus 性能分析插件 日志打印-->
+    <!--    <logger name="com.baomidou.mybatisplus.extension.plugins.PerformanceInterceptor" level="debug"/>-->
+    <!--    <logger name="org.hibernate.engine.internal" level="warn"/>-->
+<!--    <logger name="io.lettuce.core.protocol" level="warn"/>-->
+    <logger name="org.apache.http.impl" level="warn"/>
+    <!--<logger name="org.apache.http" level="info"/>-->
+    <!--    <logger name="druid.sql.Statement" level="info"/>-->
+<!--    <logger name="com.zaxxer.hikari.pool.PoolBase" level="error"/>-->
+
+
+    <root level="info">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="infoFileAppender"/>
+        <appender-ref ref="errFileAppender"/>
+        <springProfile name="office,test,prod"/>
+        <appender-ref ref="email"/>
+    </root>
+
+
+    <!--  定义线上环境日志级别  -->
+    <springProfile name="dev,test">
+        <root level="INFO">
+            <appender-ref ref="logstash"/>
+        </root>
+    </springProfile>
+</configuration>
