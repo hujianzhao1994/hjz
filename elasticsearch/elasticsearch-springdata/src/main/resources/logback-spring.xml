@@ -130,7 +130,7 @@
         <appender-ref ref="infoFileAppender"/>
         <appender-ref ref="errFileAppender"/>
         <springProfile name="office,test,prod"/>
-        <appender-ref ref="email"/>
+<!--        <appender-ref ref="email"/>-->
     </root>
 
 
