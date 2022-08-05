@@ -9,8 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.quartz.QuartzJobBean;
 import org.springframework.stereotype.Component;
 
-import java.time.LocalDateTime;
-
 @Component
 @Slf4j
 public class PrintLogJob extends QuartzJobBean {
@@ -25,7 +23,7 @@ public class PrintLogJob extends QuartzJobBean {
 //        user.setName("user1");
 //        user.setCreated(LocalDateTime.now());
 //        iUserService.save(user);
-        log.info("COMPUTER NAME:【{}】,logTime:【{}】",System.getenv().get("COMPUTERNAME"), LocalDateTime.now());
+//        log.info("COMPUTER NAME:【{}】,logTime:【{}】",System.getenv().get("COMPUTERNAME"), LocalDateTime.now());
 
     }
 }
