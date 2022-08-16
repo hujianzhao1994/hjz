@@ -1,34 +1,33 @@
 package com.jr.controller;
 
-
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
+import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.test.context.junit4.SpringRunner;
 
-import javax.servlet.http.HttpServletRequest;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-@RestController
+@SpringBootTest
+@RunWith(SpringRunner.class)
 @Slf4j
-public class RedisController {
-
+public class RedisTest {
 
     @Autowired
-    private RedisTemplate redisTemplate;
+    RedisTemplate redisTemplate;
 
-    // https://www.cxymm.net/article/boxrq1/114686938
-    @GetMapping("/getUV")
-    public Object getUV(HttpServletRequest request){
 
-        /**
-         *  统计日活跃，月活
-         *
-         *  日活： 以IP为唯一标识，  key= 当天+页面名称,value=IP
-         */
+    // https://www.modb.pro/db/183137
+    @Test
+    public void testUnion(){
 
         String yyyyMMdd = new SimpleDateFormat("yyyyMMdd").format(new Date());
         String key1 = yyyyMMdd +"_"+ "index.html";
@@ -74,9 +73,42 @@ public class RedisController {
         Long unionCnt = redisTemplate.opsForHyperLogLog().union("unionKey",key1,key2);
         log.info("unionKey-----"+unionCnt);
 
-        //redisTemplate.opsForHyperLogLog().delete(key1);  //删除redis key
-        return 0;
     }
 
+    // 统计指定日期范围内的uv
+    public long calculateUV(LocalDate start, LocalDate end) {
+        // 整理该日期范围内的key
+        List<String> keyList = new ArrayList<>();
+        while (!start.isAfter(end)) {
+            String key = String.format(start.toString());
+            keyList.add(key);
+            start = start.plusDays(1);
+            redisTemplate.opsForHyperLogLog().add(key,start);
+            redisTemplate.expire(key,5,TimeUnit.MINUTES);
+        }
 
+        // 合并这些日期内的数据
+        String redisKey = String.format("union:%s:%S", start, end);
+        Long size = redisTemplate.opsForHyperLogLog().size(redisKey);
+        log.info("size-----"+size);
+        String join = StringUtils.join(keyList.toArray(new String[0]));
+
+        Long union1 = redisTemplate.opsForHyperLogLog().union(redisKey, join);
+        log.info("join 的  字符串 一共数量-----"+union1);
+        String[] array = keyList.toArray(new String[0]);
+        Long union = 0L;
+        redisTemplate.opsForHyperLogLog().add("2022-08-08",start.plusDays(10));
+        union = redisTemplate.opsForHyperLogLog().union(redisKey,"2022-08-18");
+        for (String arr: array) {
+            union = redisTemplate.opsForHyperLogLog().union(redisKey,arr);
+        }
+
+        log.info("redisKey union-----"+union);
+
+        Long size1 = redisTemplate.opsForHyperLogLog().size(redisKey);
+        log.info("redisKey size1-----"+size1);
+        // 返回统计后的结果
+        return size1;
+
+    }
 }
