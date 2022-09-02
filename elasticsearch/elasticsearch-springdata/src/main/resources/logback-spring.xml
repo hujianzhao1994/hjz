@@ -4,6 +4,7 @@
     <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
     <!--两种取参数方式 取参方式1： 读取spring 配置文件中的参数值-->
     <springProperty scope="context" name="appName" source="spring.application.name" defaultValue="admin"/>
+    <springProperty scope="context" name="es.logstash.hostname" source="es.logstash.hostname" defaultValue="127.0.0.1:9250"/>
     <!--取参方式2-->
     <!--<property name="appName" value="shop"/>-->
     <property name="LOG_HOME" value="/usr/local/logs/admin"></property>
@@ -52,49 +53,43 @@
     </appender>
     <appender name="logstash" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
         <!--可以访问的logstash日志收集端口-->
-        <destination>127.0.0.1:9250</destination>
+<!--        <destination>127.0.0.1:9250</destination>-->
+        <destination>${es.logstash.hostname}</destination>
+        <keepAliveDuration>5 minutes</keepAliveDuration>
+
         <encoder charset="UTF-8" class="net.logstash.logback.encoder.LogstashEncoder"/>
         <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
             <providers>
                 <timestamp>
                     <timeZone>Asia/Shanghai</timeZone>
                 </timestamp>
-                <pattern>
-                        <pattern>
-                            {
-                                <!--应用名称 -->
-                                "appname":"${spring.application.name}",
-                                <!-- 日志级别 -->
-                                "level": "%level",
-                                <!--线程名称 -->
-                                "thread": "%thread",
-                                <!--日志对应类 -->
-                                "class": "%logger",
-                                <!--服务器ip -->
-<!--                                "host": "%ip",-->
-                                <!--应用端口 -->
-<!--                                "port": "${spring.application.index}",-->
-                                <!--日志信息 -->
-                                "message": "%message%n",
-                                <!--日志堆栈 -->
-                                "stack_trace": "%exception{full}"
-                            }
-                        </pattern>
-                </pattern>
+                <logLevel>
+                    <fieldName>level</fieldName>
+                </logLevel>
+                <threadName>
+                    <fieldName>thread</fieldName>
+                </threadName>
+                <message>
+                    <fieldName>message</fieldName>
+                </message>
+                <throwableClassName>
+                    <fieldName>exceptionClass</fieldName>
+                </throwableClassName>
+                <stackTrace>
+                    <fieldName>stackTrace</fieldName>
+                    <!-- maxLength - limit the length of the stack trace -->
+                    <throwableConverter class="net.logstash.logback.stacktrace.ShortenedThrowableConverter">
+                        <maxDepthPerThrowable>200</maxDepthPerThrowable>
+                        <maxLength>14000</maxLength>
+                        <rootCauseFirst>true</rootCauseFirst>
+                    </throwableConverter>
+                </stackTrace>
             </providers>
         </encoder>
     </appender>
 
 
 
-<!--    <appender name="logstash" class="net.logstash.logback.appender.LogstashTcpSocketAppender">-->
-<!--        <param name="Encoding" value="UTF-8"/>-->
-<!--        <remoteHost>127.0.0.1</remoteHost>-->
-<!--        <port>9250</port>-->
-<!--        &lt;!&ndash; <filter class="com.program.interceptor.ELKFilter"/>   引入过滤类 &ndash;&gt;-->
-<!--        &lt;!&ndash; encoder is required &ndash;&gt;-->
-<!--        <encoder charset="UTF-8" class="net.logstash.logback.encoder.LogstashEncoder" />-->
-<!--    </appender>-->
 
     <!--    <appender name="email" class="ch.qos.logback.classic.net.SMTPAppender">-->
     <!--        <smtpHost>smtp.vip.olivemail.net</smtpHost>-->
@@ -115,29 +110,27 @@
     <!--        </cyclicBufferTracker>-->
     <!--    </appender>-->
 
-    <!--配置 mybatis-plus 性能分析插件 日志打印-->
-    <!--    <logger name="com.baomidou.mybatisplus.extension.plugins.PerformanceInterceptor" level="debug"/>-->
-    <!--    <logger name="org.hibernate.engine.internal" level="warn"/>-->
-<!--    <logger name="io.lettuce.core.protocol" level="warn"/>-->
     <logger name="org.apache.http.impl" level="warn"/>
-    <!--<logger name="org.apache.http" level="info"/>-->
-    <!--    <logger name="druid.sql.Statement" level="info"/>-->
-<!--    <logger name="com.zaxxer.hikari.pool.PoolBase" level="error"/>-->
 
 
-    <root level="info">
-        <appender-ref ref="STDOUT"/>
-        <appender-ref ref="infoFileAppender"/>
-        <appender-ref ref="errFileAppender"/>
-        <springProfile name="office,test,prod"/>
-<!--        <appender-ref ref="email"/>-->
-    </root>
-
-
-    <!--  定义线上环境日志级别  -->
+    <!--  定义环境日志级别 dev,test  -->
     <springProfile name="dev,test">
         <root level="INFO">
+            <appender-ref ref="STDOUT"/>
+            <appender-ref ref="infoFileAppender"/>
+            <appender-ref ref="errFileAppender"/>
             <appender-ref ref="logstash"/>
         </root>
     </springProfile>
+
+    <!--  定义环境日志级别 prod  -->
+    <springProfile name="prod">
+        <root level="INFO">
+            <appender-ref ref="STDOUT"/>
+            <appender-ref ref="infoFileAppender"/>
+            <appender-ref ref="errFileAppender"/>
+            <appender-ref ref="logstash"/>
+        </root>
+    </springProfile>
+
 </configuration>
