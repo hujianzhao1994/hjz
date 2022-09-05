@@ -64,26 +64,14 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
-            <version>1.2.31</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-            <version>1.2.31</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
             <version>1.2.68</version>
             <scope>compile</scope>
         </dependency>
-        <dependency>
-            <groupId>com.github.kongchong</groupId>
-            <artifactId>exception-notice-spring-boot-starter</artifactId>
-            <version>1.2.5</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.github.kongchong</groupId>-->
+<!--            <artifactId>exception-notice-spring-boot-starter</artifactId>-->
+<!--            <version>1.2.5</version>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>org.aspectj</groupId>

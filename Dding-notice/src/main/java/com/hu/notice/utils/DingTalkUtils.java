@@ -6,6 +6,7 @@ import com.dingtalk.api.DingTalkClient;
 import com.dingtalk.api.request.OapiRobotSendRequest;
 import com.dingtalk.api.response.OapiRobotSendResponse;
 import org.apache.tomcat.util.codec.binary.Base64;
+import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
 import javax.crypto.Mac;
@@ -27,6 +28,7 @@ import java.util.Arrays;
  * @Author hjz
  * @Create 2020/11/23 15:05
  **/
+@Component
 public class DingTalkUtils {
 
     private static final String FIRST = "FIRST";
@@ -138,9 +140,9 @@ public class DingTalkUtils {
         text.setContent(paramLog);
         request.setText(text);
         OapiRobotSendRequest.At at = new OapiRobotSendRequest.At();
-        at.setAtMobiles(Arrays.asList("18025304060"));
+        //at.setAtMobiles(Arrays.asList("18025304060"));
         // isAtAll类型如果不为Boolean，请升级至最新SDK
-        at.setIsAtAll(false);
+        at.setIsAtAll(true);
         request.setAt(at);
         String s = JSONObject.toJSONString(request);
         System.out.println(s);
